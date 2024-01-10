@@ -1,0 +1,29 @@
+title = "Milo's blog"
+description = "Milo's own place to post tech stuff and opinions"
+base_url = "https://example.com"
+
+compile_sass = true
+generate_feed = true
+feed_filename = "atom.xml"
+build_search_index = true
+
+taxonomies = [
+  { name = "tags" },
+]
+
+[markdown]
+highlight_code = true
+highlight_theme = "boron"
+
+[extra]
+accent_color = "red"
+logo_text = "Milo Moisson"
+page_titles = "combined"
+
+menu_items = [
+  { name = "about me", url = "$BASE_URL/about" },
+  { name = "blog", url = "$BASE_URL/blog" },
+  { name = "tags", url = "$BASE_URL/tags" },
+
+  { name = "github", url = "https://github.com/mrnossiom", newtab = true },
+]
