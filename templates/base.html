@@ -49,6 +49,17 @@
                     </div>
                 </a>
             </div>
+
+            {%- if lang == "en" %}
+                {% set next_lang_link = "fr" %}
+            {% else %}
+                {% set next_lang_link = "" %}
+            {% endif -%}
+
+            <a href="/{{ next_lang_link }}" style="margin: 0 1em;">
+                <!-- TODO: replace with a pretty SVG -->
+                {{ lang }} 🔄
+            </a>
         </div>
 
         {% block header_menu %}

@@ -2,7 +2,6 @@ title = "Wiro World"
 description = "Milo's own place to post tech stuff and opinions"
 base_url = "https://mrnossiom.github.io"
 
-default_language = "en"
 generate_feed = true
 build_search_index = true
 feed_filename = "atom.xml"
@@ -19,10 +18,10 @@ highlight_theme = "boron"
 [extra]
 author = "Milo Moisson"
 
-post_view_navigation_prompt = "Next"
 accent_color = "red"
 logo_text = "Milo Moisson"
 page_titles = "combined"
+post_view_navigation_prompt = "Next"
 
 menu_items = [
   { name = "home", url = "$BASE_URL/" },
@@ -35,6 +34,8 @@ menu_items = [
 
 [translations]
 summary = "My blog"
+
+# French stuff
 
 [languages.fr]
 title = "Wiro World"
