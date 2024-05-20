@@ -1,7 +1,6 @@
 +++
+title = "Parcours en tant développeur"
 +++
-
-# Programmer Bio
 
 J'ai toujours été un enfant curieux. J'appuyais sur à peu près chaque boutton que j'avais à ma portée. J'ai rapidement chercher à comprendre le fonctionement des objets de notre quotidien. Chaque objet avec lesquels nous interagissont tous les jours sont complexes, ils sont bien souvent le résultat d'ingénieur qui inventent des solution ingénieuses (c'est le cas de le dire).
 

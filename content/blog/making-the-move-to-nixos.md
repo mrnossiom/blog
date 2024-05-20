@@ -1,16 +1,21 @@
 +++
+title = "Making the move to NixOS"
+date = "1970-01-01"
+draft = true
+
+summary = """
+  My history of operating systems, and why I changed to NixOS.
+"""
 +++
 
-# Making the move to NixOS
-
-## ToC
+# ToC
 
 - Before
 - Start
 - End
 - Future
 
-## Before
+# Before
 
 
 So a few month ago (november 2023), I pushed my first `nixos` branch commit of my `dotfiles` repository. But what lead me here, digging my own hole, wasting time on creating wanky derivations and non-working NixOS configuration modules?
@@ -50,7 +55,7 @@ I also engaged in making a quick script that could flash installer ISO that coul
 
 Still, I could now reinstall NixOS on my main laptop. I am very happy with my current setup with is btrfs on luks without running a single command thanks to Disko
 
-## Start
+# Start
 
 Using my older laptop I could easily flash a NixOS installer and make many unsucessful attempts to installing it. I finally took some time to understand how it worked and create a basic config. Then a Nixos god broke my main laptop keyboard and so my only option was to use my newly installed nixos computer and live with it. Getting into it the hard way (I prepared myself, save my config, etc.) actually worked perfectly for me.
 
@@ -66,7 +71,7 @@ nixos is just a bash abstraction :smile: over normal linux config
 
 insert nixos meme "files were not meant to have sha 256 filenames
 
-## Current 
+# Current 
 
 still having toubles with packaging and creating nixos modules
 
@@ -78,10 +83,11 @@ So far, I really like the declarative way approach as I thought I would. However
 - Must ditch old doc and make your own mental model of nix3/flakes
 - I really like the fact that I can keep my env kind of clean, but still don't know exactly how to deal with libraries pathes, etc.
 
-## Future
+# Future
 
 - what i wan't to do in the future
 
+> Grades US/UK, France, Years
 10   9    8    7    6    5    4    3 
 T    1    2    3    4    5    6    7
 23   22   21   20   19   18   17   16
