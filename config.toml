@@ -1,6 +1,6 @@
 title = "Milo's blog"
 description = "Milo's own place to post tech stuff and opinions"
-base_url = "https://example.com"
+base_url = "https://mrnossiom.github.io"
 
 compile_sass = true
 generate_feed = true
