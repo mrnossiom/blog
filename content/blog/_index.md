@@ -1,6 +1,6 @@
 +++
-title = "List of blog posts"
+title = "Blog"
 sort_by = "date"
 +++
 
-Hello, hi
+You can find here a mix of ideas on progarmmation.

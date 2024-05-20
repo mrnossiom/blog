@@ -16,11 +16,14 @@ highlight_code = true
 highlight_theme = "boron"
 
 [extra]
+author = "Milo Moisson"
+
 accent_color = "red"
 logo_text = "Milo Moisson"
 page_titles = "combined"
 
 menu_items = [
+  { name = "home", url = "$BASE_URL/" },
   { name = "about me", url = "$BASE_URL/about" },
   { name = "blog", url = "$BASE_URL/blog" },
   { name = "tags", url = "$BASE_URL/tags" },

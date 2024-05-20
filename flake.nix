@@ -1,21 +1,36 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-
-    flake-utils.url = "github:numtide/flake-utils";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
   };
 
-  outputs = { self, nixpkgs, flake-utils }: flake-utils.lib.eachDefaultSystem (system:
+  outputs = { self, nixpkgs }:
     let
-      pkgs = import nixpkgs { inherit system; };
+      inherit (nixpkgs.lib) genAttrs;
 
-      nativeBuildInputs = with pkgs; [ zola ];
+      forAllSystems = genAttrs [ "x86_64-linux" "aarch64-linux" "aarch64-darwin" ];
+      forAllPkgs = function: forAllSystems (system: function pkgs.${system});
+
+      pkgs = forAllSystems (system: (import nixpkgs {
+        inherit system;
+        overlays = [ ];
+      }));
     in
-    with pkgs;
     {
-      devShells.default = mkShell {
-        inherit nativeBuildInputs;
-      };
-    }
-  );
+      formatter = forAllPkgs (pkgs: pkgs.nixpkgs-fmt);
+
+      devShells = forAllPkgs (pkgs:
+        with pkgs.lib;
+        {
+          default = pkgs.mkShell rec {
+            nativeBuildInputs = with pkgs; [
+              zola
+              act
+            ];
+            buildInputs = with pkgs; [ ];
+
+            LD_LIBRARY_PATH = makeLibraryPath buildInputs;
+          };
+        });
+    };
 }
+
