@@ -1,3 +1,6 @@
++++
++++
+
 # Making the move to NixOS
 
 ## ToC
