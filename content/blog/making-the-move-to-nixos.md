@@ -1,30 +1,16 @@
 +++
 title = "Making the move to NixOS"
-date = "1970-01-01"
+date = "1970-01-02"
 draft = true
-
-summary = """
-  My history of operating systems, and why I changed to NixOS.
-"""
 +++
-
-# ToC
-
-- Before
-- Start
-- End
-- Future
-
-# Before
-
 
 So a few month ago (november 2023), I pushed my first `nixos` branch commit of my `dotfiles` repository. But what lead me here, digging my own hole, wasting time on creating wanky derivations and non-working NixOS configuration modules?
 
----
+<!-- more -->
 
 I've always been attracted by clean things, especially in programmation, things that feel right. I'd touched to things like Terraform before, but 
 
----
+# Before
 
 I've spent my entire childhood on macOS systems, Mac Book Pros owned by my parents, then an IMac that we acquired in 2016 when entering [6eme] grade. When entering in [3eme] grade, right after the global shutdown, my school made the "technology transition", I had to acquire a cheap computer through school partners to access online books and class ressources directly in class. It came with their custom Windows 10 image with preinstalled software.
 
