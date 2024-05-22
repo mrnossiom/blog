@@ -21,8 +21,6 @@
         <link rel="alternate" type="application/{{ feed_type }}" title="RSS" href="{{ get_url(path=config.feed_filename, lang=lang) | safe }}">
     {% endif -%}
 
-    <link rel="shortcut icon" type="{{ config.extra.favicon_mimetype | default(value="image/x-icon") | safe }}" href="{{ config.extra.favicon | safe }}">
-
     {%- block extra_head %}
     {% endblock extra_head -%}
 </head>
