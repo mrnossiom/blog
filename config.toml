@@ -11,32 +11,6 @@ taxonomies = [
 
 compile_sass = true
 
-[markdown]
-highlight_code = true
-highlight_theme = "boron"
-
-[extra]
-author = "Milo Moisson"
-
-accent_color = "red"
-logo_text = "Milo Moisson"
-page_titles = "combined"
-post_view_navigation_prompt = "Next"
-
-menu_items = [
-  { name = "home", url = "$BASE_URL/" },
-  { name = "about me", url = "$BASE_URL/about" },
-  { name = "blog", url = "$BASE_URL/blog" },
-  { name = "tags", url = "$BASE_URL/tags" },
-
-  { name = "github", url = "https://github.com/mrnossiom", newtab = true },
-]
-
-[translations]
-summary = "My blog"
-
-# French stuff
-
 [languages.fr]
 title = "Wiro World"
 
@@ -46,17 +20,45 @@ taxonomies = [
   { name = "tags" },
 ]
 
-[languages.fr.translations]
-summary = "Mon blog"
+[markdown]
+highlight_code = true
+highlight_theme = "boron"
 
-# TODO: doesn't seem to be picked up
-[languages.fr.extra]
+[extra]
+author = "Milo Moisson"
+logo_text = "Milo Moisson"
+
+accent_color = "red"
+post_view_navigation_prompt = "Next"
+
+favicon = "/favicon.ico"
+
 menu_items = [
-  { name = "accueil", url = "$BASE_URL/" },
-  { name = "à propos", url = "$BASE_URL/about" },
-  { name = "blog", url = "$BASE_URL/blog" },
-  { name = "tags", url = "$BASE_URL/tags" },
+  { key = "home", url = "/" },
+  { key = "about", url = "/about" },
+  { key = "blog", url = "/blog" },
+  { key = "tags", url = "/tags" },
 
   { name = "github", url = "https://github.com/mrnossiom", newtab = true },
 ]
+
+[translations]
+all_tags = "all tags"
+show_all_tags = "Show all tags"
+
+menu_item-home = "home"
+menu_item-about = "about me"
+menu_item-blog = "blog"
+menu_item-tags = "tags"
+
+# French stuff
+
+[languages.fr.translations]
+all_tags = "tous les tags"
+show_all_tags = "Afficher tous les tags"
+
+menu_item-home = "accueil"
+menu_item-about = "à propos"
+menu_item-blog = "blog"
+menu_item-tags = "tags"
 
