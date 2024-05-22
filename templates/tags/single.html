@@ -12,8 +12,8 @@
             ({{ term.pages | length }} post{{ term.pages | length | pluralize }})
         </h1>
 
-        <a href="{{ config.base_url | safe }}/tags">
-            Show all tags
+        <a href="{{ i18n_macros::prefix_path(path="/tags") | safe }}">
+            {{ i18n_macros::tr(key="show_all_tags") }}
         </a>
 
         {{ post_macros::list_posts(pages=term.pages) }}

@@ -1,11 +1,12 @@
 {% import "macros/date.html" as date_macros -%}
 {% import "macros/head.html" as head_macros -%}
+{% import "macros/i18n.html" as i18n_macros -%}
 {% import "macros/menu.html" as menu_macros -%}
 {% import "macros/post.html" as post_macros -%}
 {% import "macros/title.html" as title_macros -%}
 
 <!DOCTYPE html>
-<html lang="{%- if config.default_language -%}{{ config.default_language }}{%- else -%}en{%- endif -%}">
+<html lang="{{ lang }}">
 
 <head>
     <title>{%- block title %}{{ config.title }}{% endblock title -%}</title>
@@ -17,46 +18,38 @@
         {%- else %}
             {% set feed_type = 'atom+xml' %}
         {% endif -%}
-        <link rel="alternate" type="application/{{ feed_type }}" title="RSS" href="{{ get_url(path=config.feed_filename) | safe }}">
+        <link rel="alternate" type="application/{{ feed_type }}" title="RSS" href="{{ get_url(path=config.feed_filename, lang=lang) | safe }}">
     {% endif -%}
 
-    {%- if config.extra.favicon %}
-        <link rel="shortcut icon" type="{{ config.extra.favicon_mimetype | default(value="image/x-icon") | safe }}" href="{{ config.extra.favicon | safe }}">
-    {% endif -%}
+    <link rel="shortcut icon" type="{{ config.extra.favicon_mimetype | default(value="image/x-icon") | safe }}" href="{{ config.extra.favicon | safe }}">
 
     {%- block extra_head %}
     {% endblock extra_head -%}
 </head>
 
-<body class="">
+<body>
 <div class="container">
     {% block header %}
     <header class="header">
         <div class="header__inner">
             <div class="header__logo">
-                {%- if config.extra.logo_home_link %}
-                    {% set logo_link = config.extra.logo_home_link %}
-                {% else %}
-                    {% set logo_link = config.base_url %}
-                {% endif -%}
-                <a href="{{ logo_link | safe }}" style="text-decoration: none;">
+                <a href="{{ i18n_macros::prefix_path(path="/") | safe }}" style="text-decoration: none;">
                     <div class="logo">
-                      {% block logo_content %}
-                        {%- if config.extra.logo_text %}
+                        {% block logo_content %}
                             {{ config.extra.logo_text }}
-                        {% endif -%}
                         {% endblock logo_content %}
                     </div>
                 </a>
             </div>
 
-            {%- if lang == "en" %}
-                {% set next_lang_link = "fr" %}
+            {% set current_path = current_path | default(value="/") %}
+            {%- if lang == config.default_language %}
+                {% set next_lang_link = "/fr" ~ current_path %}
             {% else %}
-                {% set next_lang_link = "" %}
+                {% set next_lang_link = current_path | replace(from="/" ~ lang ~ "/", to="/") %}
             {% endif -%}
 
-            <a href="/{{ next_lang_link }}" style="margin: 0 1em;">
+            <a href="{{ next_lang_link }}" style="margin: 0 1em;">
                 <!-- TODO: replace with a pretty SVG -->
                 {{ lang }} 🔄
             </a>
@@ -73,16 +66,12 @@
     {% block footer %}
     <footer class="footer">
         <div class="footer__inner">
-            {%- if config.extra.copyright_html %}
-                <div class="copyright copyright--user">{{ config.extra.copyright_html | safe }}</div>
-            {% else %}
-                <div class="copyright">
-                    {%- if config.extra.author %}
-                        <span>© {{ date_macros::now_year() }} {{ config.extra.author }}</span>
-                    {% endif -%}
-                </div>
-            {% endif -%}
+            <div class="copyright">
+                <span>© {{ date_macros::now_year() }} {{ config.extra.author }}</span>
+            </div>
         </div>
+
+        <!-- TODO: add github sponsor card -->
     </footer>
     {% endblock footer %}
 

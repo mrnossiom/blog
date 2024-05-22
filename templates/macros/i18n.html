@@ -1,0 +1,12 @@
+{% macro tr(key) %}
+    {{ trans(key=key, lang=lang) }}
+{% endmacro menu %}
+
+{# Path must start with a slash #}
+{% macro prefix_path(path) %}
+{%- if lang == "en" -%}
+    {{ path }}
+{%- else -%}
+    {{ "/" ~ lang ~ path }}
+{%- endif -%}
+{% endmacro title %}
