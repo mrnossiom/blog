@@ -6,7 +6,7 @@ generate_feed = true
 build_search_index = true
 feed_filename = "atom.xml"
 taxonomies = [
-  { name = "tags" },
+  { name = "tags", feed = false },
 ]
 
 compile_sass = true
@@ -17,7 +17,7 @@ title = "Wiro World"
 generate_feed = true
 build_search_index = true
 taxonomies = [
-  { name = "tags" },
+  { name = "tags", feed = false },
 ]
 
 [markdown]
@@ -30,13 +30,13 @@ logo_text = "Milo Moisson"
 
 accent_color = "red"
 post_view_navigation_prompt = "Next"
-
-favicon = "/favicon.ico"
+use_full_hack_font = false
 
 menu_items = [
   { key = "home", url = "/" },
   { key = "about", url = "/about" },
-  { key = "blog", url = "/blog" },
+  { key = "posts", url = "/posts" },
+  { key = "projects", url = "/projects" },
   { key = "tags", url = "/tags" },
 
   { name = "github", url = "https://github.com/mrnossiom", newtab = true },
@@ -48,7 +48,8 @@ show_all_tags = "Show all tags"
 
 menu_item-home = "home"
 menu_item-about = "about me"
-menu_item-blog = "blog"
+menu_item-posts = "posts"
+menu_item-projects = "projects"
 menu_item-tags = "tags"
 
 # French stuff
@@ -59,6 +60,7 @@ show_all_tags = "Afficher tous les tags"
 
 menu_item-home = "accueil"
 menu_item-about = "à propos"
-menu_item-blog = "blog"
+menu_item-posts = "posts"
+menu_item-projects = "projets"
 menu_item-tags = "tags"
 
