@@ -5,7 +5,7 @@ title = "Home"
 # Hi 👋🏻
 <!-- quick introduction and link to in-depth bio -->
 
-I'm Milo, an 18 y.o. french student based next to Paris. I enjoy diving into complex parts of our everyday stack. That's why I like low level stuff, compiler, protocols and Rust 🦀. [Read more about me and my journey](@/about.md).
+I'm Milo, an 18 y.o. French student based next to Paris. I enjoy diving into complex parts of our everyday stack. That's why I like low level stuff, compiler, protocols and Rust 🦀. [Read more about me and my journey](@/about.md).
 
 <!-- +open source, cv -->
 
