@@ -1,8 +1,9 @@
 +++
 title = "Making the move to NixOS"
 date = "1970-01-02"
-draft = true
 taxonomies.tags = ["nixos"]
+
+draft = true
 +++
 
 So a few month ago (november 2023), I pushed my first `nixos` branch commit of my `dotfiles` repository. But what lead me here, digging my own hole, wasting time on creating wanky derivations and non-working NixOS configuration modules?

@@ -5,7 +5,8 @@
         </div>
         <div>
             <!-- &#xFE0E; -- force text style - some devices render this as emoji -->
-            <a class="read-more button" href="{{ page.permalink | safe }}">
+            <!-- TODO: check if I like the `continue-reading` behaviour -->
+            <a class="read-more button" href="{{ page.permalink | safe }}#continue-reading">
                 <span class="button__text">Read more</span>&nbsp;
                 <span class="button__icon">&#8617;&#xFE0E;</span>
             </a>
@@ -58,7 +59,15 @@
 
 
 {% macro header(page) %}
-    <h1 class="post-title"><a href="{{ page.permalink | safe }}">{{ page.title }}</a></h1>
+    <div>
+        <h1 class="post-title"><a href="{{ page.permalink | safe }}">
+            {{- page.title -}}
+            {%- if page.extra.wip %} (WIP){%- endif -%}
+        </a></h1>
+        {%- if page.extra.overview -%}
+            <span>{{ page.extra.overview }}</span>
+        {%- endif -%}
+    </div>
     <div class="post-meta-inline">
         {{ post_macros::date(page=page) }}
     </div>
