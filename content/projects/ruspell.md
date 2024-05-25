@@ -8,12 +8,11 @@ draft = true
 # TODO: fix rendering first
 # overview = "A port of Hunspell to Rust"
 # skills = "rust"
-wip = true
+
+summary = """
+TODO
+"""
 +++
-
-INTRO
-
-<!-- more -->
 
 Though `lspelling` and `ruspell` are separate projects, their development is closely related as `ruspell` is supposed to provide spell checking functionalities to `lspellling`, which then cleverly parses the code and tries to find spelling mistakes.
 
@@ -27,9 +26,11 @@ My first (and only approach as of today) is to fragmentize source files into tex
 
 As of May 2024, `lspelling` recomputes tokens and checks on every save. Next steps would be to recompute only parts that changed and generate suggestions on demand.
 
-In parallel, I had to find a way to spellcheck words, I opted for Hunspell which seems widespread and battle-tested as it is the default for `LibreOffice`, `Firefox`, `macOS` and more. My first PoC is done with some Hunspell C bindings. For more flexibility, I quickly decided to start my own port of [`ruspell`], to Rust.
+In parallel, I had to find a way to spellcheck words, I opted for [Hunspell] which seems widespread and battle-tested as it is the default for `LibreOffice`, `Firefox`, `macOS` and more. My first PoC is done with some Hunspell C bindings. For more flexibility, I quickly decided to start my own port of [`ruspell`], to Rust.
 
-In April 2024, I made the first commit. I was greatly helped by [`spylls`] (an explanatory port to Python) and the [blog series along it](https://zverok.space/spellchecker.html). *(+)*
+In April 2024, I made the first commit. I was greatly helped by [`spylls`] (an explanatory port to Python) and the [blog series along it](https://zverok.space/spellchecker.html).
+
+> *(+)*
 
 
 <!-- TODO: insert small icon for GitHub, needs icon shortcode -->
@@ -40,6 +41,7 @@ See both projects on GitHub: [`lspelling`] and [`ruspell`]
 [Tree-sitter]: https://en.wikipedia.org/wiki/Tree-sitter_(parser_generator)
 [LanguageTool]: https://en.wikipedia.org/wiki/LanguageTool
 [`spylls`]: https://github.com/zverok/spylls
+[Hunspell]: https://hunspell.github.io/
 
 [`ruspell`]: https://github.com/mrnossiom/ruspell
 [`lspelling`]: https://github.com/mrnossiom/lspelling
