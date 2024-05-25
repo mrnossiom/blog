@@ -1,6 +1,7 @@
 {% import "macros/date.html" as date_macros -%}
 {% import "macros/head.html" as head_macros -%}
 {% import "macros/i18n.html" as i18n_macros -%}
+{% import "macros/icons.html" as icons_macros -%}
 {% import "macros/menu.html" as menu_macros -%}
 {% import "macros/post.html" as post_macros -%}
 {% import "macros/title.html" as title_macros -%}
@@ -47,9 +48,9 @@
                 {% set next_lang_link = current_path | replace(from="/" ~ lang ~ "/", to="/") %}
             {% endif -%}
 
-            <a href="{{ next_lang_link }}" style="margin: 0 1em;">
-                <!-- TODO: replace with a pretty SVG -->
-                {{ lang }} 🔄
+            <a href="{{ next_lang_link }}" style="margin: 0 1em; text-decoration: none;">
+                {{ lang }}
+                {{ icons_macros::generic(icon="arrows-rotate") }}
             </a>
         </div>
 

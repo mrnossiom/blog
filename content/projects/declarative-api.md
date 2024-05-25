@@ -1,5 +1,5 @@
 +++
-title = "declarative-api"
+title = "Declarative API"
 weight = 1
 
 draft = true
@@ -8,12 +8,11 @@ draft = true
 # TODO: fix rendering first
 # overview = ""
 # skills = "rust"
-wip = true
+
+summary = """
+*A wannabe full toolchain for an OpenAPI replacement including a compiler with pluggable generators as output*
+"""
 +++
-
-INTRO
-
-<!-- more -->
 
 # Story
 

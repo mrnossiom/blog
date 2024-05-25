@@ -1,5 +1,5 @@
 +++
-title = "Embedded Car"
+title = "Embedded car"
 weight = 2
 
 draft = true
@@ -8,18 +8,17 @@ draft = true
 # TODO: fix rendering first
 # overview = ""
 # skills = "rust"
-wip = true
+
+summary = """
+A duo of crates with a core to control a Blue Pill (microcontroller) linked to motors and sensors to control a car. And a client to control the car from a computer with an XBox controller. I originally made this to explore the embedded side of Rust
+"""
 +++
 
-INTRO
-
-<!-- more -->
+I wanted to do embedded programmation since I started learning Rust. As a system programmming language, it seemed to be a nice application to explore.
 
 # Story
 
 ## Beginning
-
-I wanted to do embedded programmation since I started learning Rust. As a system programmming language, it seemed to be a nice application to explore.
 
 It all started in november 2023, I shared my idea of making a small remote controlled car to some friends. I started right away to do some research on hardware.
 By the following day, I had watched content on electricity, DC motors, resistors, etc. That’s how I got hyped about a non-existing car in my own bedroom.
