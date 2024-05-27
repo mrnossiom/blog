@@ -2,13 +2,16 @@
 title = "About me"
 +++
 
-# Introduction
-<!-- takes the homepage intro and expands it -->
+# TL;DR
+<!-- keep this part synced with homepage -->
 
-<!-- I started programming at ten with a wonderful book: Javascript for kids (Eyrolles). I did a lot of web development, done a discord bot in JavaScript (that I later rewrote in TypeScript for type safety and more fun). Likewise, I discovered Rust in 2021, and I think this is the most elegant system programming language we had until now. -->
-<!-- I love Open Source ❤️ and try to contribute as much as I can. -->
+I'm Milo, an 18 y.o. French student based next to Paris. I enjoy diving into complex parts of our everyday stack. That's why I like low level stuff, compiler, protocols and Rust 🦀.
 
-You can read about [my whole developper experience](@/programmer-bio.md) or read about [my personal experience and what defines me](@/life-bio.md).
+You can read about [my whole developper experience](@/programmer-bio.md) or read about [my personal experience](@/life-bio.md).
+
+In a sphere where sharing is key, [Open Source](https://opensource.org/osd) is important to me. Most of the tooling I use is *libre*, so I have the choice to take part to surrounding discussions or to inspect source code and suggest changes.
+
+I write both technical articles and development stories. You can use the [RSS](/atom.xml) feed to get updates. You can also find me on [Twitter](https://twitter.com/milomoisson), the [Fediverse](https://elk.zone/fosstodon.org/@milomoisson) or reach to me on _Discord_ at `@mrnossiom`.
 
 # Stack
 

@@ -1,8 +1,10 @@
 +++
 title = "Projects"
-sort_by = "weight"
+sort_by = "update_date"
+
 # custom template with double column
 template = "projects.html"
+# page_template = "project.html"
 +++
 
-Here's a list of projects I've done along with some information on what they thaught me and what were the challenges.
+> Projects I've developped along with what they've thaught me, what were the challenges and some fun facts.
