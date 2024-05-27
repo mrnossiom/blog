@@ -1,6 +1,7 @@
 +++
 title = "lspelling & ruspell"
-weight = 1
+date = "2024-05-27"
+updated = "2024-05-27"
 
 draft = true
 

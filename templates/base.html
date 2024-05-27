@@ -35,7 +35,7 @@
                 <a href="{{ i18n_macros::prefix_path(path="/") | safe }}" style="text-decoration: none;">
                     <div class="logo">
                         {% block logo_content %}
-                            {{ config.extra.logo_text }}
+                            {{ menu_macros::logo_text(config=config) }}
                         {% endblock logo_content %}
                     </div>
                 </a>

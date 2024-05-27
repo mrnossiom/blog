@@ -2,14 +2,19 @@ title = "Wiro World"
 description = "Milo's own place to post tech stuff and opinions"
 base_url = "https://mrnossiom.github.io"
 
-generate_feed = true
 build_search_index = true
+compile_sass = true
+
+generate_feed = true
 feed_filename = "atom.xml"
+
 taxonomies = [
+  # Tags (e.g. Rust, NixOS)
   { name = "tags", feed = false },
+  # TODO Categories (e.g. dev, perso, misc)
+  # { name = "categories", feed = false },
 ]
 
-compile_sass = true
 
 [languages.fr]
 title = "Wiro World"
@@ -38,6 +43,7 @@ menu_items = [
   { key = "posts", url = "/posts" },
   { key = "projects", url = "/projects" },
   { key = "tags", url = "/tags" },
+  { key = "archive", url = "/archive" },
 
   { name = "github", url = "https://github.com/mrnossiom", newtab = true },
 ]
@@ -51,6 +57,7 @@ menu_item-about = "about me"
 menu_item-posts = "posts"
 menu_item-projects = "projects"
 menu_item-tags = "tags"
+menu_item-archive = "archive"
 
 # French stuff
 
@@ -63,4 +70,5 @@ menu_item-about = "à propos"
 menu_item-posts = "posts"
 menu_item-projects = "projets"
 menu_item-tags = "tags"
+menu_item-archive = "archive"
 

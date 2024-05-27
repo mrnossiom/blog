@@ -21,7 +21,7 @@
 {% macro date(page) %}
     <span class="post-date">
         {%- if page.date %}
-            {{ page.date | date(format="%Y-%m-%d") }}
+            {{ page.date | date(format="%d-%m-%Y") }}
         {% endif -%}
     </span>
 {% endmacro post_date %}

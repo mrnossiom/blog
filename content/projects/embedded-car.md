@@ -1,6 +1,7 @@
 +++
 title = "Embedded car"
-weight = 2
+date = "2024-05-27"
+updated = "2024-05-27"
 
 draft = true
 

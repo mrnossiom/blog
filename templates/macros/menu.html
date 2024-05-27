@@ -53,3 +53,18 @@
     {% endif -%}
 {% endmacro menu %}
 
+{% macro logo_text(config) %}
+    {%- set wiro_acronyms = [
+        "Milo Moisson",
+        "Weird Internet Routing Oddity",
+    ] -%}
+    
+    {%- set len = wiro_acronyms | length -%}
+    
+    {% if config.extra.randomize_titles %}
+        {{ wiro_acronyms | nth(n=get_random(end=len)) }}
+    {% else %}
+        {{ config.extra.logo_text }}
+    {% endif %}
+{% endmacro menu %}
+

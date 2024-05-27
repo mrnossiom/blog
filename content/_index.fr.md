@@ -3,7 +3,7 @@ title = "Accueil"
 +++
 
 <small style="color: grey; display: block; text-align: center;">
-/!\ Je viens juste de lancer ce blog, il peut sembler vide mais tout arrive bientôt! /!\
+/!\ Je viens juste de lancer ce blog, il peut sembler vide mais tout arrive bientôt ! /!\
 </small>
 
 # Salut 👋🏻

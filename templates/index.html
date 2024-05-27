@@ -4,6 +4,10 @@
 {{ title_macros::title(page_title=section.title, main_title=config.title) }}
 {%- endblock -%}
 
+{%- block extra_head -%}
+<meta name="google-site-verification" content="DsVnNWOXsFhm4bcwz4jkfR82fjh2wKwQZKBQcn4VUak" />
+{%- endblock -%}
+
 {% block content %}
 <div class="post">
     {{ post_macros::content(page=section, summary=false) }}
