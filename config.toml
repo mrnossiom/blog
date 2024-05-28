@@ -1,26 +1,32 @@
 title = "Wiro World"
+author = "Milo Moisson"
 description = "Milo's own place to post tech stuff and opinions"
 base_url = "https://mrnossiom.github.io"
-
-build_search_index = true
-compile_sass = true
 
 generate_feed = true
 feed_filename = "atom.xml"
 
+build_search_index = true
+compile_sass = true
+
 taxonomies = [
   # Tags (e.g. Rust, NixOS)
-  { name = "tags", feed = false },
+  { name = "tags", feed = true },
   # TODO Categories (e.g. dev, perso, misc)
   # { name = "categories", feed = false },
 ]
 
-
 [languages.fr]
 title = "Wiro World"
+author = "Milo Moisson"
+description = "La place publique de Milo sur des sujets techniques ou des opinions"
 
 generate_feed = true
+feed_filename = "atom.xml"
+
 build_search_index = true
+compile_sass = true
+
 taxonomies = [
   { name = "tags", feed = false },
 ]
@@ -30,7 +36,6 @@ highlight_code = true
 highlight_theme = "boron"
 
 [extra]
-author = "Milo Moisson"
 logo_text = "Milo Moisson"
 
 accent_color = "red"
