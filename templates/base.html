@@ -13,14 +13,9 @@
     <title>{%- block title %}{{ config.title }}{% endblock title -%}</title>
     {{ head_macros::head(config=config) }}
 
-    {%- if config.generate_feed %}
-        {%- if "rss" in config.feed_filename %}
-            {% set feed_type = 'rss+xml' %}
-        {%- else %}
-            {% set feed_type = 'atom+xml' %}
-        {% endif -%}
-        <link rel="alternate" type="application/{{ feed_type }}" title="RSS" href="{{ get_url(path=config.feed_filename, lang=lang) | safe }}">
-    {% endif -%}
+    {% block rss %}
+    <link title="{{ config.title }} global feed ({{ lang }})" rel="alternate" type="application/atom+xml" href="{{ get_url(path=config.feed_filename, lang=lang) }}">
+    {% endblock %}
 
     {%- block extra_head %}
     {% endblock extra_head -%}
@@ -66,7 +61,7 @@
     <footer class="footer">
         <div class="footer__inner">
             <div class="copyright">
-                <span>© {{ date_macros::now_year() }} {{ config.extra.author }}</span>
+                <span>© {{ date_macros::now_year() }} {{ config.author }}</span>
             </div>
         </div>
 
