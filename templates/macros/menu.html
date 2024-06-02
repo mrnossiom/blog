@@ -1,56 +1,51 @@
 {% macro menu(config, current_path) %}
     {%- set current_item = false -%}
+    {%- for item in config.extra.menu_items %}
+        {%- set abs_item_url = item.url | replace(from="$BASE_URL", to=config.base_url) -%}
+        {%- set is_current = current_url == abs_item_url ~ "/"
+                             or current_url is starting_with(abs_item_url)
+        -%}
+        {%- set is_base = abs_item_url == config.base_url
+                          or abs_item_url == config.base_url ~ "/"
+        -%}
 
-    {%- if config.extra.menu_items %}
-        {%- for item in config.extra.menu_items %}
-            {%- set abs_item_url = item.url | replace(from="$BASE_URL", to=config.base_url) -%}
-            {%- set is_current = current_url == abs_item_url ~ "/"
-                                 or current_url is starting_with(abs_item_url)
-            -%}
-            {%- set is_base = abs_item_url == config.base_url
-                              or abs_item_url == config.base_url ~ "/"
-            -%}
-
-            {%- if is_base %}
-                {%- set_global base_item = item -%}
-            {% endif -%}
-
-            {%- if is_current and not is_base %}
-                {%- set_global current_item = item -%}
-            {% endif -%}
-        {% endfor -%}
-
-        {%- if not current_item and base_item %}
-            {# Did not match any menu URLs -- assume it's a blog post #}
-            {%- set current_item = base_item -%}
+        {%- if is_base %}
+            {%- set_global base_item = item -%}
         {% endif -%}
 
-        {{ menu_macros::menu_for(config=config, current_item=current_item) }}
+        {%- if is_current and not is_base %}
+            {%- set_global current_item = item -%}
+        {% endif -%}
+    {% endfor -%}
+
+    {%- if not current_item and base_item %}
+        {# Did not match any menu URLs -- assume it's a blog post #}
+        {%- set current_item = base_item -%}
     {% endif -%}
+
+    {{ menu_macros::menu_for(config=config, current_item=current_item) }}
 {% endmacro menu %}
 
 {% macro menu_for(config, current_item) %}
-    {%- if config.extra.menu_items %}
-        <nav class="menu">
-            <ul class="menu__inner">
-            {%- for item in config.extra.menu_items %}
-                <li {%- if current_item and current_item == item %} class="active" {%- endif %}>
-                        <a
-                            href="{{ i18n_macros::prefix_path(path=item.url) | safe }}"
-                            {%- if item.newtab -%} target="_blank" rel="noopener noreferrer" {% endif -%}
-                        >
-                            {%- if item.key -%}
-                                {{ i18n_macros::tr(key="menu_item-" ~ item.key) | safe }}
-                            {%- else -%}
-                                {{ item.name | safe }}
-                            {%- endif -%}
-                            {%- if item.newtab -%}🔗{% endif -%}
-                        </a>
-                </li>
-            {% endfor -%}
-            </ul>
-        </nav>
-    {% endif -%}
+<nav class="menu">
+    <ul class="menu__inner">
+    {%- for item in config.extra.menu_items -%}
+        {% if item.key -%}
+            {% set menu_item_name = i18n_macros::tr(key="menu_item-" ~ item.key) %}
+        {%- else -%}
+            {% set menu_item_name = item.name %}
+        {%- endif %}
+
+        <li {%- if current_item and current_item == item %} class="active" {%- endif %}>
+            {%- if item.newtab -%}
+                <a href="{{ item.url | safe }}" target="_blank" rel="noopener noreferrer">{{ menu_item_name }}🔗</a>
+            {%- else -%}
+                <a href="{{ i18n_macros::prefix_path(path=item.url) | safe }}">{{ menu_item_name }}</a>
+            {%- endif -%}
+        </li>
+    {% endfor -%}
+    </ul>
+</nav>
 {% endmacro menu %}
 
 {% macro logo_text(config) %}
@@ -61,10 +56,10 @@
     
     {%- set len = wiro_acronyms | length -%}
     
-    {% if config.extra.randomize_titles %}
+    {%- if config.extra.randomize_titles -%}
         {{ wiro_acronyms | nth(n=get_random(end=len)) }}
-    {% else %}
+    {%- else -%}
         {{ config.extra.logo_text }}
-    {% endif %}
+    {%- endif -%}
 {% endmacro menu %}
 

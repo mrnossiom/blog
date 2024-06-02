@@ -7,4 +7,4 @@ template = "projects.html"
 # page_template = "project.html"
 +++
 
-> Projects I've developped along with what they've thaught me, what were the challenges and some fun facts.
+Projects I've developped along with what they've thaught me, what were the challenges and some fun facts.

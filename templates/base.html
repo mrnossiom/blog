@@ -11,14 +11,15 @@
 
 <head>
     <title>{%- block title %}{{ config.title }}{% endblock title -%}</title>
-    {{ head_macros::head(config=config) }}
 
-    {% block rss %}
+    {{- head_macros::head(config=config) -}}
+
+    {%- block rss %}
     <link title="{{ config.title }} global feed ({{ lang }})" rel="alternate" type="application/atom+xml" href="{{ get_url(path=config.feed_filename, lang=lang) }}">
-    {% endblock %}
+    {% endblock -%}
 
     {%- block extra_head %}
-    {% endblock extra_head -%}
+    {% endblock extra_head %}
 </head>
 
 <body>
@@ -29,21 +30,20 @@
             <div class="header__logo">
                 <a href="{{ i18n_macros::prefix_path(path="/") | safe }}" style="text-decoration: none;">
                     <div class="logo">
-                        {% block logo_content %}
-                            {{ menu_macros::logo_text(config=config) }}
-                        {% endblock logo_content %}
+                        {%- block logo_content -%}
+                            {{- menu_macros::logo_text(config=config) -}}
+                        {%- endblock logo_content -%}
                     </div>
                 </a>
             </div>
 
-            {% set current_path = current_path | default(value="/") %}
-            {%- if lang == config.default_language %}
+            {% set current_path = current_path | default(value="/") -%}
+            {%- if lang == config.default_language -%}
                 {% set next_lang_link = "/fr" ~ current_path %}
-            {% else %}
+            {%- else -%}
                 {% set next_lang_link = current_path | replace(from="/" ~ lang ~ "/", to="/") %}
-            {% endif -%}
-
-            <a href="{{ next_lang_link }}" style="margin: 0 1em; text-decoration: none;">
+            {%- endif -%}
+            <a href="{{ next_lang_link | safe }}" style="margin: 0 1em; text-decoration: none;">
                 {{ lang }}
                 {{ icons_macros::generic(icon="arrows-rotate") }}
             </a>
@@ -60,15 +60,23 @@
     {% block footer %}
     <footer class="footer">
         <div class="footer__inner">
-            <div class="copyright">
-                <span>© {{ date_macros::now_year() }} {{ config.author }}</span>
-            </div>
-        </div>
+            <div class="copyright">© {{ date_macros::now_year() | trim }} {{ config.author }}</div>
 
-        <!-- TODO: add github sponsor card -->
+            {% if page -%}
+                {% set filepath = page.relative_path -%}
+            {%- elif section -%}
+                {% set filepath = section.relative_path %}
+            {%- else -%}
+                {% set filepath = false %}
+            {%- endif -%}
+            {%- if filepath -%}
+            <a class="edit" href="{{ config.extra.edit_page_base ~ filepath }}">
+                {{- i18n_macros::tr(key="edit_page_github") -}}
+            </a>
+            {%- endif -%}
+        </div>
     </footer>
     {% endblock footer %}
-
 </div>
 {%- block extra_body %}
 {% endblock extra_body -%}

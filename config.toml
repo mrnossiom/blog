@@ -38,6 +38,8 @@ highlight_theme = "boron"
 [extra]
 logo_text = "Milo Moisson"
 
+edit_page_base = "https://github.com/mrnossiom/mrnossiom.github.io/edit/main/content/"
+
 accent_color = "red"
 post_view_navigation_prompt = "Next"
 use_full_hack_font = false
@@ -57,6 +59,8 @@ menu_items = [
 all_tags = "all tags"
 show_all_tags = "Show all tags"
 
+edit_page_github = "Edit/Correct this page on GitHub"
+
 menu_item-home = "home"
 menu_item-about = "about me"
 menu_item-posts = "posts"
@@ -69,6 +73,8 @@ menu_item-archive = "archive"
 [languages.fr.translations]
 all_tags = "tous les tags"
 show_all_tags = "Afficher tous les tags"
+
+edit_page_github = "Editer/Corriger cette page sur GitHub"
 
 menu_item-home = "accueil"
 menu_item-about = "à propos"

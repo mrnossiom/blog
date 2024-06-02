@@ -10,7 +10,6 @@
     align-items: center;
     justify-content: space-between;
     margin: 0;
-    width: 760px;
     max-width: 100%;
 
     @media (max-width: $tablet-max-width) {
@@ -34,10 +33,10 @@
       text-align: center;
     }
 
-    & > *:first-child:not(:only-child) {
+    &>*:first-child:not(:only-child) {
       margin-right: 10px;
 
-       @media (max-width: $tablet-max-width) {
+      @media (max-width: $tablet-max-width) {
         border: none;
         padding: 0;
         margin: 0;
@@ -50,15 +49,7 @@
     }
   }
 
-  .copyright-theme-sep {
-    @media (max-width: $tablet-max-width) {
-      display: none;
-    }
-  }
-
-  .copyright-theme {
-    @media (max-width: $tablet-max-width) {
-      font-size: 0.75rem;
-    }
+  .edit {
+    text-align: center;
   }
 }
