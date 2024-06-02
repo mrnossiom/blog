@@ -6,11 +6,11 @@ taxonomies.tags = ["nixos"]
 draft = true
 +++
 
-So a few months ago (november 2023), I pushed my first `nixos` branch commit of my `dotfiles` repository. But what lead me here, digging my own hole, wasting time on creating wanky derivations and non-working NixOS configuration modules?
+So in november 2023, I pushed my first `nixos` branch commit of my `dotfiles` repository. But what lead me here, digging my own hole, wasting time on creating wanky derivations and non-working NixOS configuration modules?
 
 <!-- more -->
 
-I've always been attracted by clean things, especially in programmation, things that feel right. I'd touched to things like Terraform before, but 
+I've always been attracted by clean things, especially in programmation, things that feel right. I had touched to things like Terraform before.
 
 # Before
 
@@ -59,7 +59,7 @@ nixos is just a bash abstraction :smile: over normal linux config
 
 insert nixos meme "files were not meant to have sha 256 filenames"
 
-# Current 
+# Current
 
 still having toubles with packaging and creating nixos modules
 

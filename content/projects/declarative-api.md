@@ -17,13 +17,16 @@ summary = """
 
 # Story
 
-Summer 2023
+## Summer 2023
+
+<!-- started right after LightOn -->
+
+<!-- crawled through rustc src durring the whole summer -->
+
+## End of May 2024
 
 ---
 
-End of May 2024
-
-<!-- TODO: insert small icon for GitHub, needs icon shortcode -->
 See project on GitHub: [`declarative-api`]
 
 [`declarative-api`]: https://github.com/mrnossiom/declarative-api

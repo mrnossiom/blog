@@ -11,13 +11,15 @@ draft = true
 # skills = "rust"
 
 summary = """
-TODO
+`ruspell` is a reimplementation of the widespread Hunspell spellchecker in Rust. It provides functionalities to `lspelling` which checks source code and reports spelling mistakes.
 """
 +++
 
 Though `lspelling` and `ruspell` are separate projects, their development is closely related as `ruspell` is supposed to provide spell checking functionalities to `lspellling`, which then cleverly parses the code and tries to find spelling mistakes.
 
 # Story
+
+## First steps
 
 Since I've met the [Language Server Protocol] (LSP) specification, I've always thought it was a great way to make universal extensions that can quickly integrate into any existing code editor. I don't want to deal too much with *VS Code* specific APIs. When switching editors, an extension I missed a lot is [CSpell]. It smartly parses your code to search for dumb spelling mistakes and provide quick suggestions that most of the time make it instant.
 
@@ -29,12 +31,14 @@ As of May 2024, `lspelling` recomputes tokens and checks on every save. Next ste
 
 In parallel, I had to find a way to spellcheck words, I opted for [Hunspell] which seems widespread and battle-tested as it is the default for `LibreOffice`, `Firefox`, `macOS` and more. My first PoC is done with some Hunspell C bindings. For more flexibility, I quickly decided to start my own port of [`ruspell`], to Rust.
 
+## ruspell is born
+
 In April 2024, I made the first commit. I was greatly helped by [`spylls`] (an explanatory port to Python) and the [blog series along it](https://zverok.space/spellchecker.html).
 
-> *(+)*
+> +
 
+---
 
-<!-- TODO: insert small icon for GitHub, needs icon shortcode -->
 See both projects on GitHub: [`lspelling`] and [`ruspell`]
 
 [Language Server Protocol]: https://en.wikipedia.org/wiki/Language_Server_Protocol

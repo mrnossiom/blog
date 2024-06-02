@@ -1,7 +1,7 @@
 +++
 title = "Embedded car"
-date = "2024-05-27"
-updated = "2024-05-27"
+date = "2024-05-26"
+updated = "2024-05-26"
 
 draft = true
 
@@ -9,13 +9,14 @@ draft = true
 # TODO: fix rendering first
 # overview = ""
 # skills = "rust"
+# status = "stale"
 
 summary = """
-A duo of crates with a core to control a Blue Pill (microcontroller) linked to motors and sensors to control a car. And a client to control the car from a computer with an XBox controller. I originally made this to explore the embedded side of Rust
+Remote car embedded logic with software to control with a console controller and communicate via Bluetooth.
 """
 +++
 
-I wanted to do embedded programmation since I started learning Rust. As a system programmming language, it seemed to be a nice application to explore.
+As soon as I started learning Rust, which is often described as a [systems programming language](https://en.wikipedia.org/wiki/Systems_programming), I wanted to explore available embedded possibilities. This is my first attempt to it.
 
 # Story
 
@@ -28,7 +29,7 @@ By the end of the week, a friend and I went to [LetMeKnow](https://letmeknow.fr)
 
 At that point I had everything I needed but the microcontroller, which in a way was the core of this project. I found another shop on my way home that could provide me the Holy Blue Pill, a [`STM32F103C8T6`] board, and the associated [`ST-Link V2`] programmer to flash the controller.
 
-<!-- I was actually one euro short to pay because his card machine was broken, but the vendor was nice and let me go with the Holy Grail. -->
+<!-- I was actually one euro short to pay because his card machine was broken, but the vendor was nice and let me go with the Holy Grail -->
 
 First things first, I found the different data sheets about my components. Also, I began experimentating with Rust and [Embassy]. In the following days, I did some soldering and added various theoric implementations to interface with e.g. the motor driver. Fritzing, an open-source software to build circuits, was my choice to conceptualize my board. I went back to buy more hardware components: an ultrasonic sensor, a Bluetooth module and resistors.
 
@@ -40,9 +41,14 @@ One of the main issue I encountered was the fact that the microcontroller with E
 
 I reworked the repository to welcome a new `car-controller` crate. It contains software to interact with the car (`GUI`/`CLI`). A [video](https://www.reddit.com/r/rust/comments/yhaslb/media_i_used_rust_as_the_middle_man_for_my_rc_car) found by my friend shows a car being controlled by an XBox controller. I actually have one. That great idea that is now mine (thanks to [a Rust game input library](https://gitlab.com/gilrs-project/gilrs)).
 
+## Bluetooth works like a charm
+
+<!-- TODO -->
+
 ---
 
-<!-- TODO: insert small icon for GitHub, needs icon shortcode -->
+Due to hard debugging, too few ways to get help and general lost of interest I suspended the project until I get motivation or more experience.
+
 See project on GitHub: [`embedded-car`]
 
 [`embedded-car`]: https://github.com/mrnossiom/embedded-car

@@ -3,4 +3,4 @@ title = "Posts"
 sort_by = "date"
 +++
 
-You can find here a mix of ideas on progarmmation.
+You can find all the articles I've written here.
