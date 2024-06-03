@@ -1,4 +1,4 @@
-@import "variables";
+@use "variables";
 
 .footer {
   padding: 40px 0;
@@ -12,7 +12,7 @@
     margin: 0;
     max-width: 100%;
 
-    @media (max-width: $tablet-max-width) {
+    @media (max-width: variables.$tablet-max-width) {
       flex-direction: column;
     }
   }
@@ -36,14 +36,14 @@
     &>*:first-child:not(:only-child) {
       margin-right: 10px;
 
-      @media (max-width: $tablet-max-width) {
+      @media (max-width: variables.$tablet-max-width) {
         border: none;
         padding: 0;
         margin: 0;
       }
     }
 
-    @media (max-width: $tablet-max-width) {
+    @media (max-width: variables.$tablet-max-width) {
       flex-direction: column;
       margin-top: 10px;
     }

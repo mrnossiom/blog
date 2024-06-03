@@ -40,10 +40,6 @@ logo_text = "Milo Moisson"
 
 edit_page_base = "https://github.com/mrnossiom/mrnossiom.github.io/edit/main/content/"
 
-accent_color = "red"
-post_view_navigation_prompt = "Next"
-use_full_hack_font = false
-
 menu_items = [
   { key = "home", url = "/" },
   { key = "about", url = "/about" },
@@ -60,6 +56,7 @@ all_tags = "all tags"
 show_all_tags = "Show all tags"
 
 edit_page_github = "Edit/Correct this page on GitHub"
+post_view_nav_next = "Read more"
 
 menu_item-home = "home"
 menu_item-about = "about me"
@@ -75,6 +72,7 @@ all_tags = "tous les tags"
 show_all_tags = "Afficher tous les tags"
 
 edit_page_github = "Editer/Corriger cette page sur GitHub"
+post_view_nav_next = "Lire plus"
 
 menu_item-home = "accueil"
 menu_item-about = "à propos"

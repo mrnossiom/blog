@@ -37,16 +37,21 @@
                 </a>
             </div>
 
-            {% set current_path = current_path | default(value="/") -%}
-            {%- if lang == config.default_language -%}
-                {% set next_lang_link = "/fr" ~ current_path %}
-            {%- else -%}
-                {% set next_lang_link = current_path | replace(from="/" ~ lang ~ "/", to="/") %}
-            {%- endif -%}
-            <a href="{{ next_lang_link | safe }}" style="margin: 0 1em; text-decoration: none;">
-                {{ lang }}
-                {{ icons_macros::generic(icon="arrows-rotate") }}
-            </a>
+            <div class="header__utils">
+                {% set current_path = current_path | default(value="/") -%}
+                {%- if lang == config.default_language -%}
+                    {% set next_lang_link = "/fr" ~ current_path %}
+                {%- else -%}
+                    {% set next_lang_link = current_path | replace(from="/" ~ lang ~ "/", to="/") %}
+                {%- endif -%}
+                <a href="{{ next_lang_link | safe }}">
+                    {{ icons_macros::generic(icon="globe") }}
+                </a>
+
+                <span onclick="switchTheme()">
+                    {{ icons_macros::generic(icon="moon") }}
+                </span>
+            </div>
         </div>
 
         {% block header_menu %}

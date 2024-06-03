@@ -2,7 +2,11 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
+    <noscript>
+    <link rel="stylesheet" href="{{ get_url(path="no-js.css", trailing_slash=false) | safe }}">
+    </noscript>
+    <script src="{{ get_url(path="/js/theme-switcher.js", trailing_slash=false) }}"></script>
+    
     <link rel="stylesheet" href="{{ get_url(path="style.css", trailing_slash=false) | safe }}">
-    <link rel="stylesheet" href="{{ get_url(path="color/" ~ config.extra.accent_color ~ ".css", trailing_slash=false) | safe }}">
     <link rel="stylesheet" href="{{ get_url(path="font-hack-subset.css", trailing_slash=false) | safe }}">
 {% endmacro head %}

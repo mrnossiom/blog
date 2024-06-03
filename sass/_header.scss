@@ -1,4 +1,4 @@
-@import "variables";
+@use "variables";
 
 @mixin menu {
   position: absolute;
@@ -16,6 +16,8 @@
   display: flex;
   flex-direction: column;
   position: relative;
+
+  gap: 1em;
 
   &__inner {
     display: flex;
@@ -41,25 +43,33 @@
     }
   }
 
-  .menu {
-    margin: 20px 0;
+  &__utils {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 5em;
 
+    text-decoration: none;
+
+    * {
+      display: grid;
+      place-content: center;
+    }
+  }
+
+  .menu {
     &__inner {
       display: flex;
       flex-wrap: wrap;
       list-style: none;
+      gap: 1em;
+
       margin: 0;
       padding: 0;
 
       li {
         &.active {
           color: var(--accent-alpha-70);
-        }
-
-        &:not(:last-of-type) {
-          margin-right: 20px;
-          margin-bottom: 10px;
-          flex: 0 0 auto;
         }
       }
     }

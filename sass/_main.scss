@@ -1,4 +1,4 @@
-@import "variables";
+@use "variables";
 
 html {
   box-sizing: border-box;
@@ -23,12 +23,17 @@ body {
   -webkit-overflow-scrolling: touch;
   -webkit-text-size-adjust: 100%;
 
-  @media (max-width: $phone-max-width) {
+  @media (max-width: variables.$phone-max-width) {
     font-size: 1rem;
   }
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   display: flex;
   align-items: center;
   font-weight: bold;
@@ -47,7 +52,9 @@ h3 {
   font-size: 1.2rem;
 }
 
-h4, h5, h6 {
+h4,
+h5,
+h6 {
   font-size: 1.15rem;
 }
 
@@ -83,16 +90,19 @@ figure {
   max-width: 100%;
   margin: 25px 0;
 
-  &.left, img {
+  &.left,
+  img {
     margin-right: auto;
   }
 
-  &.center, img {
+  &.center,
+  img {
     margin-left: auto;
     margin-right: auto;
   }
 
-  &.right, img {
+  &.right,
+  img {
     margin-left: auto;
   }
 
@@ -134,7 +144,7 @@ pre {
   border-top: 1px solid rgba(255, 255, 255, .1);
   border-bottom: 1px solid rgba(255, 255, 255, .1);
 
-  @media (max-width: $phone-max-width) {
+  @media (max-width: variables.$phone-max-width) {
     white-space: pre-wrap;
     word-wrap: break-word;
   }
@@ -152,7 +162,7 @@ blockquote {
 
   position: relative;
 
-  @media (max-width: $phone-max-width) {
+  @media (max-width: variables.$phone-max-width) {
     padding-right: 0;
   }
 
@@ -193,7 +203,9 @@ table {
   margin: 40px 0;
 }
 
-table, th, td {
+table,
+th,
+td {
   border: 1px dashed var(--accent);
   padding: 10px;
 }
@@ -202,7 +214,8 @@ th {
   color: var(--accent);
 }
 
-ul, ol {
+ul,
+ol {
   margin-left: 30px;
   padding: 0;
 
@@ -210,7 +223,7 @@ ul, ol {
     position: relative;
   }
 
-  @media (max-width: $phone-max-width) {
+  @media (max-width: variables.$phone-max-width) {
     margin-left: 20px;
   }
 }
@@ -227,7 +240,7 @@ ol ol {
   min-height: 100vh;
   margin: 0 auto;
 
-  @media (max-width: $phone-max-width) {
+  @media (max-width: variables.$phone-max-width) {
     padding: 20px;
   }
 }
