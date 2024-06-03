@@ -31,11 +31,11 @@ As of May 2024, `lspelling` recomputes tokens and checks on every save. Next ste
 
 In parallel, I had to find a way to spellcheck words, I opted for [Hunspell] which seems widespread and battle-tested as it is the default for `LibreOffice`, `Firefox`, `macOS` and more. My first PoC is done with some Hunspell C bindings. For more flexibility, I quickly decided to start my own port of [`ruspell`], to Rust.
 
-## ruspell is born
+## `ruspell` is born
 
 In April 2024, I made the first commit. I was greatly helped by [`spylls`] (an explanatory port to Python) and the [blog series along it](https://zverok.space/spellchecker.html).
 
-> +
+> (+)
 
 ---
 

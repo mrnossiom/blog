@@ -1,8 +1,8 @@
-@import 'buttons';
-
-@import 'header';
-@import 'logo';
-@import 'main';
-@import 'post';
-@import 'pagination';
-@import 'footer';
+@use 'buttons';
+@use 'color';
+@use 'footer';
+@use 'header';
+@use 'logo';
+@use 'main';
+@use 'pagination';
+@use 'post';
