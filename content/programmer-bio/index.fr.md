@@ -2,7 +2,7 @@
 title = "Parcours en tant que développeur"
 +++
 
-J'ai toujours été un enfant curieux. J'appuyais sur à peu près chaque boutton que j'avais à ma portée. J'ai rapidement cherché à comprendre le fonctionnement des objets de notre quotidien. Chaque objet avec lequel nous interagissons tous les jours sont complexes, ils sont bien souvent le résultat d'ingénieur qui inventent des solutions ingénieuses (c'est le cas de le dire).
+J'ai toujours été un enfant curieux. J'appuyais sur à peu près chaque bouton que j'avais à ma portée. J'ai rapidement cherché à comprendre le fonctionnement des objets de notre quotidien. Chaque objet avec lequel nous interagissons tous les jours sont complexes, ils sont bien souvent le résultat d'ingénieur qui inventent des solutions ingénieuses (c'est le cas de le dire).
 
 Mon père a beaucoup bidouillé à l'arrivée de l'informatique. 
 
@@ -10,7 +10,7 @@ Mon père a beaucoup bidouillé à l'arrivée de l'informatique.
 
 En 2016, j'ai dix ans, pour noël, on m'offre _JavaScript pour les kids_ écrit par _Nick Morgan_ et édité chez _Eyrolles_.
 
-{{ image(src="/javascript-pour-les-kids-cover.jpg", style="width: 20%;") }}
+{{ image(src="cover-js-for-kids.jpg", style="max-height: 50svh;") }}
 
 Les premiers chapitres se font dans la console d'un navigateur, on y apprend les bases de la programmation moderne : les variables, les boucles, les conditions, les fonctions, etc. Pour passer à des projets plus conséquents, il faut ensuite apprendre à faire une bête page HTML pour sauvegarder son code.
 
