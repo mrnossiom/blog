@@ -9,7 +9,7 @@ title = "Home"
 # Hi 👋🏻
 <!-- quick introduction and link to in-depth bio -->
 
-I'm Milo, an 18 y.o. French student based next to Paris. I enjoy diving into complex parts of our everyday stack. That's why I like low level stuff, compiler, protocols and Rust 🦀. [Read more about me and my journey](@/about.md).
+I'm Milo, an 18 y.o. French student based next to Paris. I enjoy diving into complex parts of our everyday stack. That's why I like (among others) low level stuff, compilers, protocols and Rust 🦀. [Read more about me and my journey](@/about.md).
 
 In a sphere where sharing is key, [Open Source](https://opensource.org/osd) is important to me. Most of the tooling I use is *libre*, so I have the choice to take part to surrounding discussions or to inspect source code and suggest changes.
 
@@ -19,6 +19,8 @@ I write both technical articles and development stories. You can use the [RSS](/
 
 # Featured
 <!-- list featured projects or posts -->
+
+## Projects ([all](@/projects/_index.md))
 
 - [`git-leave`](https://github.com/mrnossiom/git-leave) (Rust, Jan. 2022): _Check for unsaved or uncommitted changes on your machine_.
 
