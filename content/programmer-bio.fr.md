@@ -2,7 +2,7 @@
 title = "Parcours en tant que développeur"
 +++
 
-J'ai toujours été un enfant curieux. J'appuyais sur à peu près chaque bout-on que j'avais à ma portée. J'ai rapidement cherché à comprendre le fonctionnement des objets de notre quotidien. Chaque objet avec lequel nous interagissons tous les jours sont complexes, ils sont bien souvent le résultat d'ingénieur qui inventent des solutions ingénieuses (c'est le cas de le dire).
+J'ai toujours été un enfant curieux. J'appuyais sur à peu près chaque boutton que j'avais à ma portée. J'ai rapidement cherché à comprendre le fonctionnement des objets de notre quotidien. Chaque objet avec lequel nous interagissons tous les jours sont complexes, ils sont bien souvent le résultat d'ingénieur qui inventent des solutions ingénieuses (c'est le cas de le dire).
 
 Mon père a beaucoup bidouillé à l'arrivée de l'informatique. 
 
@@ -10,7 +10,7 @@ Mon père a beaucoup bidouillé à l'arrivée de l'informatique.
 
 En 2016, j'ai dix ans, pour noël, on m'offre _JavaScript pour les kids_ écrit par _Nick Morgan_ et édité chez _Eyrolles_.
 
-<!-- TODO: insert book cover -->
+{{ image(src="/javascript-pour-les-kids-cover.jpg", style="width: 20%;") }}
 
 Les premiers chapitres se font dans la console d'un navigateur, on y apprend les bases de la programmation moderne : les variables, les boucles, les conditions, les fonctions, etc. Pour passer à des projets plus conséquents, il faut ensuite apprendre à faire une bête page HTML pour sauvegarder son code.
 
@@ -20,7 +20,7 @@ C'est ainsi que j'ai fait successivement la connaissance de *Smultron* puis *Sub
 
 Il faut savoir que je n'ai jamais atteint la fin de ce livre. Je me suis embarqué dans le passionnant (de mémoire) cours HTML/CSS de Mathieu Nebra en libre accès sur *OpenClassrooms*.
 
-<!-- TODO: insert old html page screenshots -->
+<!-- TODO: insert old html page screenshots, or even link the website -->
 
 J'ai aussi suivi la formation pour concevoir son site en PHP avec `MAMP` et l'installation d'une base de données et de `phpMyAdmin`.
 
@@ -30,7 +30,7 @@ J'ai enfin suivi un cours sur le SQL pour apprendre à interroger des bases de d
 
 ---
 
-À partir de ce moment, j'ai découvert *VS Code* pour développer mes projets.
+> À partir de ce moment, j'ai découvert *VS Code* pour développer mes projets.
 
 En ?, je reviens à mes racines, découvre l'existence de *React* et du *JSX* (HTML-in-JS).
 

@@ -48,9 +48,23 @@
                     {{ icons_macros::generic(icon="globe") }}
                 </a>
 
-                <span onclick="switchTheme()">
-                    {{ icons_macros::generic(icon="moon") }}
-                </span>
+                <div class="theme-switcher">
+                    <script defer src="{{ get_url(path="js/theme-switcher.js") }}"></script>
+
+                    <span onclick="switchTheme()">
+                        {{ icons_macros::generic(icon="moon") }}
+
+                    </span>
+
+                    <div
+                        title="{{ i18n_macros::tr(key='reset_mode') }}"
+                        id="theme-resetter"
+                        onclick="resetTheme()"
+                        tabindex="0"
+                        role="button"
+                        aria-hidden="true"
+                    ></div>
+                </div>
             </div>
         </div>
 
