@@ -51,13 +51,16 @@
                 <div class="theme-switcher">
                     <script defer src="{{ get_url(path="js/theme-switcher.js") }}"></script>
 
-                    <span onclick="switchTheme()">
-                        {{ icons_macros::generic(icon="moon") }}
-
-                    </span>
+                    <div
+                        title="{{ i18n_macros::tr(key='theme-switch') }}"
+                        class="theme-icon"
+                        onclick="switchTheme()"
+                        tabindex="0"
+                        role="button"
+                    ></div>
 
                     <div
-                        title="{{ i18n_macros::tr(key='reset_mode') }}"
+                        title="{{ i18n_macros::tr(key='theme-reset') }}"
                         id="theme-resetter"
                         onclick="resetTheme()"
                         tabindex="0"
