@@ -8,23 +8,45 @@
 <div class="posts">
     <p>{{ post_macros::content(page=section, summary=false) }}</p>
 
-    {%- if paginator %}
-        {%- set show_pages = paginator.pages -%}
-    {% else %}
-        {%- set show_pages = section.pages -%}
-    {% endif -%}
-
-    {%- for page in show_pages %}
+    <!-- Replace with manual list? -->
+    {%- for page in section.pages %}
         <div class="post on-list">
-            {{ post_macros::header(page=page) }}
-            {%- if page.extra.skills -%}
-                <img src="https://skillicons.dev/icons?i={{ page.extra.skills }}" />
-            {%- endif -%}
+            <h1 class="post-title">
+                <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
+
+                {% if page.extra.forge -%}
+                <a href="{{ page.extra.forge }}">
+                    <i class="icon icon-git"></i>
+                </a>
+                {% endif -%}
+
+                {% if page.extra.skills -%}
+                <span>·</span>
+                <div class="skills">
+                    {% for skill in page.extra.skills -%}
+                    <img class="icon" src="/icons/{{ skill }}.svg" />
+                    {% endfor -%}
+                </div>
+                {% endif -%}
+            </h1>
+            <div class="post-meta-inline">
+                {{ post_macros::date(page=page) }}
+            </div>
+
+            {{ post_macros::tags(page=page) }}
             <div class="post-content">
                 {{ page.extra.summary | markdown | safe }}
+                <div>
+                    <!-- &#xFE0E; -- force text style - some devices render this as emoji -->
+                    <a class="read-more button" href="{{ page.permalink | safe }}#continue-reading">
+                        <span class="button__text">{{ i18n_macros::tr(key="read_more") }}</span>&nbsp;
+                        <span class="button__icon">&#8617;&#xFE0E;</span>
+                    </a>
+                </div>
             </div>
         </div>
     {% endfor -%}
+
     <div class="pagination">
         <div class="pagination__buttons">
         {%- if paginator.previous %}

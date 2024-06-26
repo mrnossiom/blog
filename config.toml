@@ -54,11 +54,12 @@ menu_items = [
 all_tags = "all tags"
 show_all_tags = "Show all tags"
 
+lang-switch = "Change to french"
 theme-switch = "Change theme"
 theme-reset = "Reset to detected theme"
 
 edit_page_github = "Edit/Correct this page on GitHub"
-post_view_nav_next = "Read more"
+read_more = "Read more"
 
 menu_item-home = "home"
 menu_item-about = "about me"
@@ -73,11 +74,12 @@ menu_item-archive = "archive"
 all_tags = "tous les tags"
 show_all_tags = "Afficher tous les tags"
 
+lang-switch = "Passer en anglais"
 theme-switch = "Changer de theme"
 theme-reset = "Revenir au theme automatique"
 
-edit_page_github = "Editer/Corriger cette page sur GitHub"
-post_view_nav_next = "Lire plus"
+edit_page_github = "Éditer/Corriger cette page sur GitHub"
+read_more = "Lire plus"
 
 menu_item-home = "accueil"
 menu_item-about = "à propos"

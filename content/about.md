@@ -7,11 +7,11 @@ title = "About me"
 
 I'm Milo, an 18 y.o. French student based next to Paris. I enjoy diving into complex parts of our everyday stack. That's why I like low level stuff, compiler, protocols and Rust 🦀.
 
-You can read about [my whole developper experience](@/programmer-bio/index.md) or read about [my personal experience](@/life-bio.md).
+> You can read about [my whole developper experience](@/programmer-bio/index.md) or about [my personal experience](@/life-bio.md).
 
 In a sphere where sharing is key, [Open Source](https://opensource.org/osd) is important to me. Most of the tooling I use is *libre*, so I have the choice to take part to surrounding discussions or to inspect source code and suggest changes.
 
-I write both technical articles and development stories. You can use the [RSS](/atom.xml) feed to get updates. You can also find me on [Twitter](https://twitter.com/milomoisson), the [Fediverse](https://elk.zone/fosstodon.org/@milomoisson) or reach to me on _Discord_ at `@mrnossiom`.
+I write both technical articles and development stories. You can use the [RSS](/atom.xml) <i class="icon icon-rss"></i> feed to get updates. You can also find me on [Twitter](https://twitter.com/milomoisson) <i class="icon icon-twitter"></i> or the [Fediverse](https://elk.zone/fosstodon.org/@milomoisson) <i class="icon icon-fediverse"></i>. Feel free to reach by mail at `milomoisson@gmail.com` or on _Discord_ <i class="icon icon-discord"></i> at `@mrnossiom`.
 
 # Stack
 
