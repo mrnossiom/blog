@@ -6,7 +6,7 @@
 //
 // Script must be loaded deferly to properly work
 
-const themeResetter = document.getElementById("theme-resetter");
+const themeResetter = document.querySelector(".theme-resetter");
 
 function getSystemThemePreference() {
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';

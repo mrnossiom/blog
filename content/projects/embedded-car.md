@@ -6,9 +6,8 @@ updated = "2024-05-26"
 draft = true
 
 [extra]
-# TODO: fix rendering first
-# overview = ""
-# skills = "rust"
+forge = "https://github.com/mrnossiom/embedded-car"
+skills = ["rust-embedded"]
 # status = "stale"
 
 summary = """

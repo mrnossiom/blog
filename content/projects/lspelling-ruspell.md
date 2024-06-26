@@ -6,9 +6,9 @@ updated = "2024-05-27"
 draft = true
 
 [extra]
-# TODO: fix rendering first
-# overview = "A port of Hunspell to Rust"
-# skills = "rust"
+forge = "https://github.com/mrnossiom/ruspell"
+# forge = "https://github.com/mrnossiom/lspelling"
+skills = ["rust"]
 
 summary = """
 `ruspell` is a reimplementation of the widespread Hunspell spellchecker in Rust. It provides functionalities to `lspelling` which checks source code and reports spelling mistakes.
@@ -21,7 +21,7 @@ Though `lspelling` and `ruspell` are separate projects, their development is clo
 
 ## First steps
 
-Since I've met the [Language Server Protocol] (LSP) specification, I've always thought it was a great way to make universal extensions that can quickly integrate into any existing code editor. I don't want to deal too much with *VS Code* specific APIs. When switching editors, an extension I missed a lot is [CSpell]. It smartly parses your code to search for dumb spelling mistakes and provide quick suggestions that most of the time make it instant.
+Since I found out about the [Language Server Protocol] (LSP) specification, I've always thought it was a great way to make universal extensions that can quickly integrate into any existing code editor. I don't want to deal too much with *VS Code* specific APIs. When switching editors, an extension I missed a lot is [CSpell]. It smartly parses your code to search for dumb spelling mistakes and provide quick suggestions that most of the time make it instant.
 
 You can guess what's next, in Mars 2024, I started working on such an extension under the form of an LSP. I want it to be able to intelligently parses code to spell check with different contexts (e.g. variable names in `camelCase` or `snake_case` must be correctly split). Some ideas to get better context would be to use [Tree-sitter] grammars and query specific parts. Imagine having [LanguageTool] checking your user facing errors strings for wording and mistakes.
 

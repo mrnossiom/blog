@@ -6,9 +6,8 @@ updated = "2024-05-27"
 draft = true
 
 [extra]
-# TODO: fix rendering first
-# overview = ""
-# skills = "rust"
+skills = ["rust"]
+forge = "https://github.com/mrnossiom/declarative-api"
 
 summary = """
 *A wannabe full toolchain for an OpenAPI replacement including a compiler with pluggable generators as output*

@@ -1,7 +1,6 @@
 {% import "macros/date.html" as date_macros -%}
 {% import "macros/head.html" as head_macros -%}
 {% import "macros/i18n.html" as i18n_macros -%}
-{% import "macros/icons.html" as icons_macros -%}
 {% import "macros/menu.html" as menu_macros -%}
 {% import "macros/post.html" as post_macros -%}
 {% import "macros/title.html" as title_macros -%}
@@ -45,28 +44,33 @@
                     {% set next_lang_link = current_path | replace(from="/" ~ lang ~ "/", to="/") %}
                 {%- endif -%}
                 <a href="{{ next_lang_link | safe }}">
-                    {{ icons_macros::generic(icon="globe") }}
+                    <i
+                        title="{{ i18n_macros::tr(key='lang-switch') }}"
+                        class="icon icon-globe"
+                        tabindex="0"
+                        role="button"
+                    ></i>
                 </a>
 
                 <div class="theme-switcher">
                     <script defer src="{{ get_url(path="js/theme-switcher.js") }}"></script>
 
-                    <div
+                    <i
                         title="{{ i18n_macros::tr(key='theme-switch') }}"
-                        class="theme-icon"
+                        class="icon icon-theme-switcher"
                         onclick="switchTheme()"
                         tabindex="0"
                         role="button"
-                    ></div>
+                    ></i>
 
-                    <div
+                    <i
                         title="{{ i18n_macros::tr(key='theme-reset') }}"
-                        id="theme-resetter"
+                        class="theme-resetter icon icon-theme-resetter"
                         onclick="resetTheme()"
                         tabindex="0"
                         role="button"
                         aria-hidden="true"
-                    ></div>
+                    ></i>
                 </div>
             </div>
         </div>

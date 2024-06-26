@@ -6,6 +6,9 @@ updated = "2024-05-27"
 draft = true
 
 [extra]
+forge = "https://github.com/mrnossiom/ruspell"
+skills = ["rust"]
+
 summary = """
 `ruspell` est un réimplémentation du correcteur d'orthographe répandu Hunspell en Rust. Entre autres, il fournit ses fonctions à `lspelling` qui s'occupe de vérifer des erreurs d'othorgrapghe dans du code source.
 """

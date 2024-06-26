@@ -36,6 +36,9 @@
   }
 
   &-title {
+    display: flex;
+    gap: .8rem;
+
     --border: 2px dashed var(--accent);
     position: relative;
     color: var(--accent);

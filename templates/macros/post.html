@@ -6,7 +6,7 @@
         <div>
             <!-- &#xFE0E; -- force text style - some devices render this as emoji -->
             <a class="read-more button" href="{{ page.permalink | safe }}#continue-reading">
-                <span class="button__text">Read more</span>&nbsp;
+                <span class="button__text">{{ i18n_macros::tr(key="read_more") }}</span>&nbsp;
                 <span class="button__icon">&#8617;&#xFE0E;</span>
             </a>
         </div>
@@ -31,7 +31,7 @@
     {%- if page.lower or page.higher %}
         <div class="pagination">
             <div class="pagination__title">
-                <span class="pagination__title-h">{{ i18n_macros::tr(key="post_view_nav_next") }}</span>
+                <span class="pagination__title-h">{{ i18n_macros::tr(key="read_more") }}</span>
                 <hr />
             </div>
             <div class="pagination__buttons">
@@ -66,11 +66,6 @@
     </div>
 
     {{ post_macros::tags(page=page) }}
-
-    {%- if page.extra.overview -%}
-        {{ throw(message="overview not implemented") -}}
-        <span>{{ page.extra.overview }}</span>
-    {%- endif -%}
 {% endmacro header %}
 
 

@@ -6,6 +6,9 @@ updated = "2024-05-26"
 draft = true
 
 [extra]
+forge = "https://github.com/mrnossiom/embedded-car"
+skills = ["rust-embedded"]
+
 summary = """
 La logique embarquée d'une voiture télécommandée avec le logiciel pour la contrôler avec une manette de console et communiquer par Bluetooth.
 """
