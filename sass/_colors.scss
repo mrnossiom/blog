@@ -1,33 +1,25 @@
 @use "icons";
 
 @mixin light-theme {
-  --accent: rgb(240, 48, 64);
-  --accent-alpha-70: rgba(240, 48, 64, .7);
-  --accent-alpha-20: rgba(240, 48, 64, .2);
+  --mm-accent: oklch(62% .22 23);
+  --mm-accent-alpha-70: oklch(62% .22 23 / .7);
+  --mm-accent-alpha-20: oklch(62% .22 23 / .2);
 
-  --background: white;
-  --color: #201030;
-  --border-color: rgba(0, 0, 16, .125);
-
-  div.logo {
-    color: white;
-  }
+  --mm-background: oklch(100% 0 0);
+  --mm-color: oklch(21% .06 304);
+  --mm-border-color: oklch(7% .05 264 / .125);
 
   @include icons.light-icons;
 }
 
 @mixin dark-theme {
-  --accent: rgb(255, 98, 102);
-  --accent-alpha-70: rgba(255, 98, 102, .7);
-  --accent-alpha-20: rgba(255, 98, 102, .2);
+  --mm-accent: oklch(.7 .19 22);
+  --mm-accent-alpha-70: oklch(.7 .19 22 / .7);
+  --mm-accent-alpha-20: oklch(.7 .19 22 / .2);
 
-  --background: #221F29;
-  --color: white;
-  --border-color: rgba(255, 255, 255, .1);
-
-  div.logo {
-    color: black;
-  }
+  --mm-background: oklch(.24 .01 298);
+  --mm-color: oklch(1 0 0);
+  --mm-border-color: oklch(1 0 0 / .1);
 
   @include icons.dark-icons;
 }

@@ -20,7 +20,7 @@ I write both technical articles and development stories. You can use the [RSS](/
 # Featured
 <!-- list featured projects or posts -->
 
-## Projects
+## Released projects
 
 - `git-leave` [<i class="icon icon-github"></i>](https://github.com/mrnossiom/git-leave) (Rust, Jan. 2022): _Check for unsaved or uncommitted changes on your machine_.
 

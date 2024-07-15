@@ -6,9 +6,9 @@ updated = "2024-05-26"
 draft = true
 
 [extra]
+status = "stale"
 forge = "https://github.com/mrnossiom/embedded-car"
 skills = ["rust-embedded"]
-# status = "stale"
 
 summary = """
 Remote car embedded logic with software to control with a console controller and communicate via Bluetooth.

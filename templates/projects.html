@@ -14,6 +14,10 @@
             <h1 class="post-title">
                 <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
 
+                {% if page.extra.status -%}
+                <span class="badge" data-status="{{page.extra.status}}">{{page.extra.status}}</span>
+                {% else %}{{ throw(message="status is required for "~page.title) }}{% endif -%}
+
                 {% if page.extra.forge -%}
                 <a href="{{ page.extra.forge }}">
                     <i class="icon icon-git"></i>

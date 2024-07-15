@@ -6,6 +6,7 @@ updated = "2024-05-27"
 draft = true
 
 [extra]
+status = "wip"
 forge = "https://github.com/mrnossiom/ruspell"
 # forge = "https://github.com/mrnossiom/lspelling"
 skills = ["rust"]

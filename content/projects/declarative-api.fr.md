@@ -6,8 +6,9 @@ updated = "2024-05-27"
 draft = true
 
 [extra]
-skills = ["rust"]
+status = "stale"
 forge = "https://github.com/mrnossiom/declarative-api"
+skills = ["rust"]
 
 summary = """
 Une suite d'outils aspirant à remplacer `OpenAPI` comprenant un compilateur avec des générateurs enfichables en sortie.
