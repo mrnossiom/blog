@@ -16,8 +16,8 @@ body {
   font-family: Hack, DejaVu Sans Mono, Monaco, Consolas, Ubuntu Mono, monospace;
   font-size: 1rem;
   line-height: 1.54;
-  background-color: var(--background);
-  color: var(--color);
+  background-color: var(--mm-background);
+  color: var(--mm-color);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
@@ -110,8 +110,8 @@ figure {
     font-size: 14px;
     padding: 5px 10px;
     margin-top: 5px;
-    background: var(--accent);
-    color: var(--background);
+    background: var(--mm-accent);
+    color: var(--mm-background);
 
     &.left {
       text-align: left;
@@ -130,7 +130,7 @@ figure {
 code {
   font-family: Hack, DejaVu Sans Mono, Monaco, Consolas, Ubuntu Mono, monospace;
   font-feature-settings: normal;
-  background: var(--accent-alpha-20);
+  background: var(--mm-accent-alpha-20);
   padding: 1px 6px;
   margin: 0 2px;
   font-size: .95rem;
@@ -183,7 +183,7 @@ blockquote {
     display: block;
     position: absolute;
     left: -25px;
-    color: var(--accent);
+    color: var(--mm-accent);
   }
 }
 
@@ -197,12 +197,12 @@ table {
 table,
 th,
 td {
-  border: 1px dashed var(--accent);
+  border: 1px dashed var(--mm-accent);
   padding: 10px;
 }
 
 th {
-  color: var(--accent);
+  color: var(--mm-accent);
 }
 
 ul,
@@ -243,37 +243,6 @@ ol ol {
 hr {
   width: 100%;
   border: none;
-  background: var(--border-color);
+  background: var(--mm-border-color);
   height: 1px;
-}
-
-.hidden {
-  display: none;
-}
-
-.theme-resetter {
-  /* Return arrow  */
-  width: 0.8rem;
-  height: 0.8rem;
-
-  position: absolute;
-  top: 0;
-  right: 0;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-  transition-delay: 0.5s;
-  cursor: pointer;
-  background: var(--color);
-}
-
-.theme-switcher:hover .theme-resetter.has-custom-theme {
-  visibility: visible;
-  opacity: 1;
-  transition: opacity 0.1s ease, visibility 0.1s ease;
-  transition-delay: 0s;
-
-  &:hover {
-    background: var(--accent);
-  }
 }

@@ -26,5 +26,5 @@ J'écris à la fois des articles techniques et des histoires de développement. 
 
 - `dotfiles` [<i class="icon icon-github"></i>](https://github.com/mrnossiom/dotfiles) (Nix, 2024): Ma configuration `Nix` qui définit mes ordinateurs, mon propre serveur local et mon environnement de développement.
 
-Vous pouvez trouver des articles sur certains projets [ici](@/projects/_index.md) 🗒️.
+Vous pouvez trouver des articles sur certains projets [ici](@/projects/_index.fr.md) 🗒️.
 

@@ -1,0 +1,65 @@
+@import url("/compiled.css");
+
+@import url("_buttons.css");
+
+.logo {
+  padding: .4rem .8rem;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--mm-accent);
+  color: var(--mm-background);
+}
+
+.theme-resetter {
+  /* Return arrow  */
+  width: 1rem;
+  height: 1rem;
+
+  position: absolute;
+  top: -.2rem;
+  right: -.2rem;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transition-delay: 0.5s;
+  cursor: pointer;
+  background: var(--mm-color);
+}
+
+.theme-switcher:hover .theme-resetter.has-custom-theme {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.1s ease, visibility 0.1s ease;
+  transition-delay: 0s;
+
+  &:hover {
+    background: var(--mm-accent);
+  }
+}
+
+.post {
+  .skills {
+    display: flex;
+    gap: .5rem;
+  }
+
+  .badge {
+    font-size: 1rem;
+    color: var(--mm-color);
+    padding: .2rem .5rem;
+    border-radius: 1rem;
+    background-color: var(--mm-accent-alpha-70);
+
+    &[data-status="wip"] {
+      background-color: oklch(.56 .18 38 / .7);
+    }
+
+    &[data-status="released"] {
+      background-color: oklch(.56 .15 150 / .7);
+    }
+
+    &[data-status="stale"] {
+      background-color: oklch(.56 .22 300 / .7);
+    }
+  }
+}
