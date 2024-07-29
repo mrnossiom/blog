@@ -1,8 +1,9 @@
 +++
 title = "Links"
-+++
 
-<!-- Idea from @matklad: https://matklad.github.io/links.html -->
+# Idea from Alex Kladov (@matklad)
+# https://matklad.github.io/links.html
++++
 
 Links I often share or articles I like to refer to.
 
