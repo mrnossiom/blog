@@ -1,5 +1,8 @@
 +++
 title = "About me"
+
+# Inspiration from Jimmy Hartzell
+# https://www.thecodedmessage.com/about/
 +++
 
 # TL;DR
