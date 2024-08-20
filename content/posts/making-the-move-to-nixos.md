@@ -1,14 +1,20 @@
 +++
-title = "Making the move to NixOS"
+title = "Making the move to NixOS (and nix* in general)"
 date = "1970-01-02"
 taxonomies.tags = ["nixos"]
 
 draft = true
 +++
 
-So in november 2023, I pushed my first `nixos` branch commit of my `dotfiles` repository. But what lead me here, digging my own hole, wasting time on creating wanky derivations and non-working NixOS configuration modules?
+In november 2023, I pushed my first `nixos` config commit of my `dotfiles` repository. But what lead me here, digging my own hole, wasting time on creating wanky derivations and non-working NixOS configuration modules?
 
 <!-- more -->
+
+# TL;DL
+
+- NixOS is excellent at bringing together and doumenting your Linux knowledge. I wouldn't have started my own config without properly saving each file.
+- When NixOS has support for something it usually works fine.
+
 
 I've always been attracted by clean things, especially in programmation, things that feel right. I had touched to things like Terraform before.
 
@@ -74,6 +80,7 @@ So far, I really like the declarative way approach as I thought I would. However
 # Future
 
 - what I want to do in the future
+
 
 > Grades US/UK, France, Years
 10   9    8    7    6    5    4    3 
