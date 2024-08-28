@@ -37,7 +37,8 @@ highlight_theme = "boron"
 [extra]
 logo_text = "Milo Moisson"
 
-edit_page_base = "https://github.com/mrnossiom/mrnossiom.github.io/edit/main/content/"
+# TODO: publish repo
+# edit_page_base = "https://github.com/mrnossiom/mrnossiom.github.io/edit/main/content/"
 
 menu_items = [
   { key = "home", url = "/" },

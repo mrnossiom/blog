@@ -1,0 +1,5 @@
+{# elink: make a link that open in an external window #}
+<a href="{{ url | safe }}" target="_blank">{{ content }}</a>
+{% if icon -%}
+<i class="icon icon-{{ icon }}"></i>
+{%- endif -%}
