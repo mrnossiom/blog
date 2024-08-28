@@ -10,6 +10,8 @@ status = "wip"
 # forge = "https://github.com/wirolibre/passes"
 skills = ["rust", "apple"]
 
+# TODO: split introduction and implmentation into different articles
+
 summary = """
 TODO
 """

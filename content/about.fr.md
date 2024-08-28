@@ -10,7 +10,7 @@ Je suis Milo, un étudiant français de 18 ans qui vit près de Paris. J'appréc
 
 Dans un milieu où la collaboration est un élément essentiel, le [logiciel libre](https://fr.wikipedia.org/wiki/Open_source) est important pour moi. La plupart de l'outillage que j'utilise est libre. J'ai la possibilité de prendre part aux discussions qui mène le projet ou d'inspecter le code source et de proposer mes changements.
 
-J'écris à la fois des articles techniques et des histoires de développement. Vous pouvez utiliser le flux [RSS](/fr/atom.xml) <i class="icon icon-rss"></i> pour être mis à jour. Vous pouvez aussi me trouver sur [Twitter](https://twitter.com/milomoisson) <i class="icon icon-twitter"></i> ou le [Fediverse](https://elk.zone/fosstodon.org/@milomoisson) <i class="icon icon-fediverse"></i>. N'hésitez pas à me contacter par mail à `milomoisson@gmail.com` ou sur _Discord_ <i class="icon icon-discord"></i> à `@mrnossiom`.
+J'écris à la fois des articles techniques et des histoires de développement. Vous pouvez utiliser le flux [RSS](/atom.xml) {{icon(icon="rss")}} pour être mis à jour. Vous pouvez aussi me trouver sur {{elink(content="Twitter", url="https://twitter.com/milomoisson", icon="twitter")}} ou le {{elink(content="Fediverse", url="https://elk.zone/fosstodon.org/@milomoisson", icon="fediverse")}}. N'hésitez pas à me contacter par mail à `milomoisson@gmail.com` ou sur _Discord_ {{icon(icon="discord")}} à `@mrnossiom`.
 
 # Pile de technologies
 

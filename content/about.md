@@ -14,11 +14,11 @@ I'm Milo, an 18 y.o. French student based next to Paris. I enjoy diving into com
 
 In a sphere where sharing is key, [Open Source](https://opensource.org/osd) is important to me. Most of the tooling I use is *libre*, so I have the choice to take part to surrounding discussions or to inspect source code and suggest changes.
 
-I write both technical articles and development stories. You can use the [RSS](/atom.xml) <i class="icon icon-rss"></i> feed to get updates. You can also find me on [Twitter](https://twitter.com/milomoisson) <i class="icon icon-twitter"></i> or the [Fediverse](https://elk.zone/fosstodon.org/@milomoisson) <i class="icon icon-fediverse"></i>. Feel free to reach by mail at `milomoisson@gmail.com` or on _Discord_ <i class="icon icon-discord"></i> at `@mrnossiom`.
+I write both technical articles and development stories. You can use the [RSS](/atom.xml) {{icon(icon="rss")}} feed to get updates. You can also find me on {{elink(content="Twitter", url="https://twitter.com/milomoisson", icon="twitter")}} or the {{elink(content="Fediverse", url="https://elk.zone/fosstodon.org/@milomoisson", icon="fediverse")}}. Feel free to reach by mail at `milomoisson@gmail.com` or on _Discord_ {{icon(icon="discord")}} at `@mrnossiom`.
 
 # Stack
 
-As of May 2024, the majority of the code I write for myself is Rust.
+As of 2024, the majority of the code I write for myself is Rust.
 
 I know how to interact with relational databases (Postgres). I've already managed small RPI servers to host backends or services such as [OctoPrint]. Before I tasted `Nix`, I would use [Docker] a lot, even for local developement. I touched to [Terraform] to deploy to the cloud.
 
