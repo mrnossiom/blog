@@ -6,7 +6,7 @@
   --mm-accent-alpha-20: oklch(62% .22 23 / .2);
 
   --mm-background: oklch(100% 0 0);
-  --mm-color: oklch(21% .06 304);
+  --mm-foreground: oklch(21% .06 304);
   --mm-border-color: oklch(7% .05 264 / .125);
 
   @include icons.light-icons;
@@ -18,7 +18,7 @@
   --mm-accent-alpha-20: oklch(.7 .19 22 / .2);
 
   --mm-background: oklch(.24 .01 298);
-  --mm-color: oklch(1 0 0);
+  --mm-foreground: oklch(1 0 0);
   --mm-border-color: oklch(1 0 0 / .1);
 
   @include icons.dark-icons;

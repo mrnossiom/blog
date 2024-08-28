@@ -13,12 +13,11 @@ html {
 body {
   margin: 0;
   padding: 0;
-  /* TODO: change to system font, use normal font for article, JBM for code */
-  font-family: Hack, DejaVu Sans Mono, Monaco, Consolas, Ubuntu Mono, monospace;
+  font-family: var(--mm-font-article);
   font-size: 1rem;
   line-height: 1.54;
   background-color: var(--mm-background);
-  color: var(--mm-color);
+  color: var(--mm-foreground);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
@@ -129,7 +128,7 @@ figure {
 }
 
 code {
-  font-family: Hack, DejaVu Sans Mono, Monaco, Consolas, Ubuntu Mono, monospace;
+  font-family: var(--mm-font-code);
   font-feature-settings: normal;
   background: var(--mm-accent-alpha-20);
   padding: 1px 6px;
@@ -138,7 +137,7 @@ code {
 }
 
 pre {
-  font-family: Hack, DejaVu Sans Mono, Monaco, Consolas, Ubuntu Mono, monospace;
+  font-family: var(--mm-font-code);
   padding: 20px;
   font-size: .95rem;
   overflow: auto;

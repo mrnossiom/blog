@@ -35,7 +35,7 @@ i.icon {
   vertical-align: middle;
   display: inline-block;
 
-  background: var(--mm-color);
+  background: var(--mm-foreground);
 
   &[role=button] {
     cursor: pointer;

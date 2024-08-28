@@ -2,6 +2,15 @@
 
 @import url("_buttons.css");
 
+:root {
+  --mm-font-article: var(--mm-font-code);
+  /* TODO: use proper non-monospace font? system stack? */
+  /* --mm-font-article: sans-serif; */
+
+  /* TODO: change to system font, use normal font for article, JBM for code */
+  --mm-font-code: "JetBrainsMono", Hack, DejaVu Sans Mono, Monaco, Consolas, Ubuntu Mono, monospace;
+}
+
 .logo {
   padding: .4rem .8rem;
   text-align: center;
@@ -23,7 +32,7 @@
   transition: opacity 0.3s ease, visibility 0.3s ease;
   transition-delay: 0.3s;
   cursor: pointer;
-  background: var(--mm-color);
+  background: var(--mm-foreground);
 }
 
 .theme-switcher:hover .theme-resetter.has-custom-theme {
@@ -45,7 +54,7 @@
 
   .badge {
     font-size: 1rem;
-    color: var(--mm-color);
+    color: var(--mm-foreground);
     padding: .2rem .5rem;
     border-radius: 1rem;
     background-color: var(--mm-accent-alpha-70);
