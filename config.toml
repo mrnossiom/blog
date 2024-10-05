@@ -69,7 +69,7 @@ menu_item-projects = "projects"
 menu_item-tags = "tags"
 menu_item-archive = "archive"
 
-# French stuff
+projects-linked_posts = "Posts linked to this project"
 
 [languages.fr.translations]
 all_tags = "tous les tags"
@@ -89,3 +89,4 @@ menu_item-projects = "projets"
 menu_item-tags = "tags"
 menu_item-archive = "archive"
 
+projects-linked_posts = "Posts liés à ce projet"

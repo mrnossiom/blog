@@ -11,6 +11,12 @@ status = "wip"
 skills = ["rust", "apple"]
 
 # TODO: split introduction and implmentation into different articles
+linked_posts = [
+   # "passes-introduction",
+   # "passes-lib"
+
+   "posts/sign-wallet-pass/index.md"
+]
 
 summary = """
 TODO
