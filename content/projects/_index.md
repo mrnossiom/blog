@@ -2,9 +2,8 @@
 title = "Projects"
 sort_by = "update_date"
 
-# custom template with double column
 template = "projects.html"
-# page_template = "project.html"
+page_template = "project.html"
 
 # TODO: change to projects with a quick summary and demo
 #       each project can have associated blog posts
