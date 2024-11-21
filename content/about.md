@@ -10,7 +10,7 @@ title = "About me"
 
 I'm Milo, an 18 y.o. French student based next to Paris. I enjoy diving into complex parts of our everyday stack. That's why I like low level stuff, compiler, protocols and Rust 🦀.
 
-> You can read about [my whole developper experience](@/programmer-bio/index.md) or about [my personal experience](@/life-bio.md).
+<!-- > You can read about [my whole developper experience](@/programmer-bio/index.md) or about [my personal experience](@/life-bio.md). -->
 
 In a sphere where sharing is key, [Open Source](https://opensource.org/osd) is important to me. Most of the tooling I use is *libre*, so I have the choice to take part to surrounding discussions or to inspect source code and suggest changes.
 
