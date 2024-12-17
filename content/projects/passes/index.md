@@ -6,7 +6,7 @@ updated = "2024-07-12"
 draft = true
 
 [extra]
-status = "wip"
+status = "stale"
 # forge = "https://github.com/wirolibre/passes"
 skills = ["rust", "apple"]
 
