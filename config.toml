@@ -1,7 +1,7 @@
 title = "Wiro World"
 author = "Milo Moisson"
 description = "Milo's own place to post tech stuff and opinions"
-base_url = "https://mrnossiom.github.io"
+base_url = "https://wiro.world"
 
 generate_feed = true
 feed_filename = "atom.xml"
@@ -38,7 +38,7 @@ highlight_theme = "boron"
 logo_text = "Milo Moisson"
 
 # TODO: publish repo
-# edit_page_base = "https://github.com/mrnossiom/mrnossiom.github.io/edit/main/content/"
+# edit_page_base = "https://github.com/mrnossiom/blog/edit/main/content/"
 
 menu_items = [
   { key = "home", url = "/" },
