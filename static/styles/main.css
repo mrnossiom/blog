@@ -19,7 +19,11 @@
   color: var(--mm-background);
 }
 
-.theme-resetter {
+.theme-switcher:focus-within {
+  outline: 1px auto currentColor;
+}
+
+.theme-reset {
   /* Return arrow */
   width: 1rem;
   height: 1rem;
@@ -35,7 +39,7 @@
   background: var(--mm-foreground);
 }
 
-.theme-switcher:hover .theme-resetter.has-custom-theme {
+.theme-switcher:hover .theme-reset.has-custom-theme {
   visibility: visible;
   opacity: 1;
   transition: opacity 0.1s ease, visibility 0.1s ease;
@@ -59,16 +63,20 @@
     border-radius: 1rem;
     background-color: var(--mm-accent-alpha-70);
 
+    &[data-status="draft"] {
+      background-color: oklch(.56 .05 277 / 70%);
+    }
+
+    &[data-status="hold"] {
+      background-color: oklch(.56 .22 300 / .7);
+    }
+
     &[data-status="wip"] {
       background-color: oklch(.56 .18 38 / .7);
     }
 
     &[data-status="released"] {
       background-color: oklch(.56 .15 150 / .7);
-    }
-
-    &[data-status="stale"] {
-      background-color: oklch(.56 .22 300 / .7);
     }
   }
 }

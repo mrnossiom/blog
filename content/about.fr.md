@@ -4,7 +4,7 @@ title = "À propos"
 
 # En bref
 
-Je suis Milo, un étudiant français de 18 ans qui vit près de Paris. J'apprécie explorer les différentes parties de la pile technologique que nous utilisons au quotidien. C'est pour ça que j'aime le bas niveau, les compilateurs, les protocoles et le Rust 🦀.
+Je suis Milo, un étudiant français de 19 ans qui vit près de Paris. J'apprécie explorer les différentes parties de la pile technologique que nous utilisons au quotidien. C'est pour ça que j'aime le bas niveau, les compilateurs, les protocoles et le Rust 🦀.
 
 <!-- > Vous pouvez aussi en lire plus sur mon [parcours de développeur](@/programmer-bio/index.fr.md) ou sur [mon expérience personnelle](@/life-bio.fr.md). -->
 

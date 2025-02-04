@@ -61,6 +61,11 @@ theme-reset = "Reset to detected theme"
 edit_page_github = "Edit/Correct this page on GitHub"
 read_more = "Read more"
 
+state_label-draft = "draft"
+state_label-hold = "on hold"
+state_label-wip = "wip"
+state_label-released = "released"
+
 menu_item-home = "home"
 menu_item-about = "about me"
 menu_item-posts = "posts"
@@ -80,6 +85,11 @@ theme-reset = "Revenir au theme automatique"
 
 edit_page_github = "Éditer/Corriger cette page sur GitHub"
 read_more = "Lire plus"
+
+state_label-draft = "brouillon"
+state_label-hold = "suspendu"
+state_label-wip = "wip"
+state_label-released = "publié"
 
 menu_item-home = "accueil"
 menu_item-about = "à propos"
