@@ -6,7 +6,8 @@
 //
 // Script must be loaded deferly to properly work
 
-const themeResetter = document.querySelector(".theme-resetter");
+const switchButton = document.querySelector(".theme-switch");
+const resetButton = document.querySelector(".theme-reset");
 
 function getSystemThemePreference() {
     return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
@@ -21,7 +22,7 @@ function setTheme(theme) {
     document.documentElement.setAttribute("data-theme", theme);
     currentTheme = theme;
     localStorage.setItem('theme', theme);
-    themeResetter.classList.add("has-custom-theme");
+    resetButton.classList.add("has-custom-theme");
 }
 
 // ——— Exports
@@ -34,5 +35,23 @@ function resetTheme() {
     document.documentElement.removeAttribute('data-theme');
     currentTheme = getSystemThemePreference();
     localStorage.removeItem('theme');
-    themeResetter.classList.remove("has-custom-theme");
+    resetButton.classList.remove("has-custom-theme");
 }
+
+switchButton.addEventListener("click", _ => switchTheme());
+switchButton.addEventListener("keydown", (event) => {
+    if (event.key != "Enter") return;
+    event.preventDefault();
+
+    switchTheme()
+});
+
+resetButton.addEventListener("click", _ => resetTheme());
+resetButton.addEventListener("keydown", (event) => {
+    if (event.key != "Enter") return;
+    event.preventDefault();
+
+    resetTheme();
+});
+
+setTheme(currentTheme);

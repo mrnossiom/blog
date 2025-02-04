@@ -8,7 +8,7 @@ title = "Accueil"
 
 # Salut 👋🏻
 
-Je suis Milo, un étudiant français de 18 ans qui vit près de Paris. J'apprécie explorer la pile technologique que nous utilisons au quotidien pour mieux en comprendre le fonctionnement. C'est pour ça que j'aime (entre autres) le bas niveau, les compilateurs, les protocoles et le Rust 🦀. [En lire plus sur moi et mon parcours](@/about.fr.md).
+Je suis Milo, un étudiant français de 19 ans qui vit près de Paris. J'apprécie explorer la pile technologique que nous utilisons au quotidien pour mieux en comprendre le fonctionnement. C'est pour ça que j'aime (entre autres) le bas niveau, les compilateurs, les protocoles et le Rust 🦀. [En lire plus sur moi et mon parcours](@/about.fr.md).
 
 Dans un milieu où la collaboration est un élément essentiel, le [logiciel libre](https://fr.wikipedia.org/wiki/Open_source) est important pour moi. La plupart de l'outillage que j'utilise est libre. J'ai la possibilité de prendre part aux discussions qui mènent le projet ou d'inspecter le code source et de proposer mes changements.
 

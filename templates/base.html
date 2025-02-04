@@ -43,13 +43,12 @@
                 {%- else -%}
                     {% set next_lang_link = current_path | replace(from="/" ~ lang ~ "/", to="/") %}
                 {%- endif -%}
-                <a href="{{ next_lang_link | safe }}">
-                    <i
-                        title="{{ i18n_macros::tr(key='lang-switch') }}"
-                        class="icon icon-globe"
-                        tabindex="0"
-                        role="button"
-                    ></i>
+                <a
+                    href="{{ next_lang_link | safe }}"
+                    title="{{ i18n_macros::tr(key='lang-switch') }}"
+                    role="button"
+                >
+                    <i class="icon icon-globe"></i>
                 </a>
 
                 <div class="theme-switcher">
@@ -57,19 +56,16 @@
 
                     <i
                         title="{{ i18n_macros::tr(key='theme-switch') }}"
-                        class="icon icon-theme-switcher"
-                        onclick="switchTheme()"
+                        class="theme-switch icon icon-theme-switcher"
                         tabindex="0"
                         role="button"
                     ></i>
 
                     <i
                         title="{{ i18n_macros::tr(key='theme-reset') }}"
-                        class="theme-resetter icon icon-theme-resetter"
-                        onclick="resetTheme()"
+                        class="theme-reset icon icon-theme-resetter"
                         tabindex="0"
                         role="button"
-                        aria-hidden="true"
                     ></i>
                 </div>
             </div>

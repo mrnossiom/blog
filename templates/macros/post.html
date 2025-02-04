@@ -59,6 +59,10 @@
 
 {% macro header(page) %}
     <h1 class="post-title"><a href="{{ page.permalink | safe }}">
+        {% if page.draft -%}
+        <span class="badge" data-status="draft">{{ i18n_macros::tr(key="state_label-draft") }}</span>
+        {% endif -%}
+        
         {{- page.title -}}
     </a></h1>
     <div class="post-meta-inline">
@@ -72,9 +76,6 @@
 {% macro list_posts(pages) %}
     <ul>
     {%- for page in pages %}
-        {%- if page.draft %}
-            {% continue %}
-        {% endif -%}
         <li class="post-list">
             <a href="{{ page.permalink | safe }}">
                 <span class="post-date">{{ page.date }}</span>

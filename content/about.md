@@ -8,7 +8,7 @@ title = "About me"
 # TL;DR
 <!-- keep this part synced with homepage -->
 
-I'm Milo, an 18 y.o. French student based next to Paris. I enjoy diving into complex parts of our everyday stack. That's why I like low level stuff, compiler, protocols and Rust 🦀.
+I'm Milo, an 19 y.o. French student based next to Paris. I enjoy diving into complex parts of our everyday stack. That's why I like low level stuff, compiler, protocols and Rust 🦀.
 
 <!-- > You can read about [my whole developper experience](@/programmer-bio/index.md) or about [my personal experience](@/life-bio.md). -->
 
