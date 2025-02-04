@@ -2,7 +2,7 @@ name: Build and deploy GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [ public ]
   workflow_dispatch:
 
 permissions:
@@ -17,12 +17,9 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
       - uses: actions/checkout@v4
 
