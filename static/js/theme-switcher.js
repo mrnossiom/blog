@@ -1,10 +1,24 @@
-// Provides two functions to force light/dark theme.
-// - `switchTheme`: guesses the current theme and forces the other variant
-//   though `data-theme` root element attribute.
-// - `resetTheme`: removes all forced theme data on page, and lets CSS detect
-//   user preference though media queries.
+// Allow to force light/dark theme while respecting media query by default.
+// Detects user preference on load and applies it if necessary.
+// 
+// Script must be loaded with `defer`.
+// 
+// # Functions
+// 
+// - `setTheme`: forces the given theme by setting `data-theme` attribute on
+//   the root element. Also store user preference in local storage. Finally,
+//   adds custom style to `.theme-reset` element.
+// 
+// - `switchTheme`: forces the variant opposed to the current one using `setTheme`.
+// 
+// - `resetTheme`: removes all forced theme data, and uses the detected user
+//   preference though a color scheme media query.
 //
-// Script must be loaded deferly to properly work
+// # Elements
+//
+// - `.theme-switch`: gets `click` and `keydown` events that call `switchTheme`
+// 
+// - `.theme-reset`: gets `click` and `keydown` events that call `resetTheme`
 
 const switchButton = document.querySelector(".theme-switch");
 const resetButton = document.querySelector(".theme-reset");
@@ -25,8 +39,6 @@ function setTheme(theme) {
     resetButton.classList.add("has-custom-theme");
 }
 
-// ——— Exports
-
 function switchTheme() {
     setTheme(currentTheme === 'dark' ? 'light' : 'dark', true);
 }
@@ -43,7 +55,7 @@ switchButton.addEventListener("keydown", (event) => {
     if (event.key != "Enter") return;
     event.preventDefault();
 
-    switchTheme()
+    switchTheme();
 });
 
 resetButton.addEventListener("click", _ => resetTheme());
@@ -54,4 +66,7 @@ resetButton.addEventListener("keydown", (event) => {
     resetTheme();
 });
 
-setTheme(currentTheme);
+// If there is a local user preference, apply it.
+if (localStorage.getItem("theme")) {
+    setTheme(currentTheme);
+}
