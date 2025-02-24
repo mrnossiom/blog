@@ -38,6 +38,7 @@
   &-title {
     display: flex;
     gap: .8rem;
+    flex-wrap: wrap;
 
     --mm-border: 2px dashed var(--mm-accent);
     position: relative;
