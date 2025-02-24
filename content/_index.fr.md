@@ -2,10 +2,6 @@
 title = "Accueil"
 +++
 
-<small style="color: grey; display: block; text-align: center;">
-/!\ Je viens juste de lancer ce blog, il peut sembler vide mais tout arrive bientôt ! /!\
-</small>
-
 # Salut 👋🏻
 
 Je suis Milo, un étudiant français de 19 ans qui vit près de Paris. J'apprécie explorer la pile technologique que nous utilisons au quotidien pour mieux en comprendre le fonctionnement. C'est pour ça que j'aime (entre autres) le bas niveau, les compilateurs, les protocoles et le Rust 🦀. [En lire plus sur moi et mon parcours](@/about.fr.md).

@@ -2,10 +2,6 @@
 title = "Home"
 +++
 
-<small style="color: grey; display: block; text-align: center;">
-/!\ Just created this blog, some pages may seem empty but it's coming soon! /!\
-</small>
-
 # Hi 👋🏻
 <!-- quick introduction and link to in-depth bio -->
 
