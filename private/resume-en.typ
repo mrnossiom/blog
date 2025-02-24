@@ -49,8 +49,8 @@ That’s why I like low level stuff, compilers, protocols, and systems programmi
   date: [May 2025 --- Present],
 )[
   Following my attempt at a DSL for *OpenAPI* back in 2024,
-    kalei is my first Ahead-of-Time compiler front-end which is still in early developement.
-  This is also an opportunity to experiment with a few #emph[novel] PL features like effects/capabilites.
+    _kalei_ is my first Ahead-of-Time compiler front-end which is still in early developement.
+  This is also an opportunity to experiment with a few _novel_ PL features like effects/capabilites.
 ]
 
 #project(
@@ -58,8 +58,8 @@ That’s why I like low level stuff, compilers, protocols, and systems programmi
   link: link("https://github.com/tower-lsp-community/tower-lsp-server", "github.com"),
   date: [November 2024 --- Present],
 )[
-  There were stale discussions around forking the unmaintained #emph[tower-lsp] project.
-  I finally took action to create the #emph[tower-lsp-community] organization and take over the maintainance.
+  There were stale discussions around forking the unmaintained _tower-lsp_ project.
+  I finally took action to create the _tower-lsp-community_ organization and take over the maintainance.
 ]
 
 #project(
@@ -68,7 +68,7 @@ That’s why I like low level stuff, compilers, protocols, and systems programmi
   date: [April 2024 --- Present],
 )[
   This project is quite small, but it made me interact with a lot of people.
-  It's the reason I had any interest for language servers and cared about the absence of maintainers on #emph[tower-lsp].
+  It's the reason I had any interest for language servers and cared about the absence of maintainers on _tower-lsp_.
 ]
 
 #project(
@@ -79,12 +79,12 @@ That’s why I like low level stuff, compilers, protocols, and systems programmi
   #emph[Rust, Axum, OAuth2, Docker, Terraform, MySQL, Diesel] \
   Throughout the project,
     I
-    used diesel to have type-safe SQL queries,
+    used _diesel_ to have type-safe SQL queries,
     made custom futures,
-    used Docker and Terraform to deploy it,
-    finished an OAuth2 flow,
+    used _Docker_ and _Terraform_ to deploy it,
+    finished an _OAuth2_ flow,
     learned a lot about procedural and MBE macros,
-    and in general touched way more technologies than necessary.
+    and, in general, touched way more technologies than necessary.
   As the first large project I did in Rust, it served as a way to discover the ecosystem and other technologies.
 ]
 

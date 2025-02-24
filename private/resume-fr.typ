@@ -38,7 +38,7 @@ C'est pourquoi j'apprécie les aspects bas niveau, les compilateurs, les protoco
   date: [Été 2022],
   techs: [TypeScript, Vue]
 )[
-  - Création d'une extention Google Sheets pour interagir en masse avec les LLMs.
+  - Création d'une extension Google Sheets pour interagir en masse avec les LLMs.
 ]
 
 #experience(
@@ -54,9 +54,8 @@ C'est pourquoi j'apprécie les aspects bas niveau, les compilateurs, les protoco
   link: link("https://kalei.wiro.world", "kalei.wiro.world"),
   date: [Mai 2025 --- Aujourd'hui],
 )[
-  Following my attempt at a DSL for REST APIs back in 2024,
-    kalei is my first machine code compiler which is still in very early developement.
-  I want to experiment with a few #emph[novel] PL features like effects/capabilites.
+  _kalei_ est mon premier compilateur, pour me permettre d'en apprendre plus sur sa conception.
+  Je cherche aussi à jouer avec des concepts encore académiques comme les effets ou les capacités (_capabilities_).
 ]
 
 #project(
@@ -64,8 +63,8 @@ C'est pourquoi j'apprécie les aspects bas niveau, les compilateurs, les protoco
   link: link("https://github.com/tower-lsp-community/tower-lsp-server", "github.com"),
   date: [Novembre 2024 --- Aujourd'hui],
 )[
-  There were stale discussions around forking the unmaintained #emph[tower-lsp] project.
-  I finally took action to create the #emph[tower-lsp-community] organization and take over the maintainance.
+  Il y avait des discussions pour _forker_ le projet _tower-lsp_ devenu abandonné.
+  J'ai finalement pris le parti de créer l'organisation _tower-lsp-community_ et reprendre la maintenance du projet.
 ]
 
 #project(
@@ -73,8 +72,8 @@ C'est pourquoi j'apprécie les aspects bas niveau, les compilateurs, les protoco
   link: link("https://github.com/mrnossiom/wakatime-ls", "github.com"),
   date: [Avril 2024 --- Aujourd'hui],
 )[
-  This project is quite small, but it made me interact with a lot of people.
-  It's the reason I had any interest for language servers and cared about the absence of maintainers on #emph[tower-lsp].
+  Même si ce projet est relativement petit, il m'a fait interagir avec un bon nombre de personnes.
+  C'est la raison pour laquelle j'ai acquis un intérêt pour les _language servers_ et que je me suis penché sur _tower-lsp_.
 ]
 
 #project(
@@ -83,15 +82,15 @@ C'est pourquoi j'apprécie les aspects bas niveau, les compilateurs, les protoco
   date: [Avril 2022 --- Mars 2023],
 )[
   #emph[Rust, Axum, OAuth2, Docker, Terraform, MySQL, Diesel] \
-  Throughout the project,
-    I
-    used diesel to have type-safe SQL queries,
-    made custom futures,
-    used Docker and Terraform to deploy it,
-    finished an OAuth2 flow,
-    learned a lot about procedural and MBE macros,
-    and in general touched way more technologies than necessary.
-  As the first large project I did in Rust, it served as a way to discover the ecosystem and other technologies.
+  Pendant ce project,
+    j'ai utilisé _diesel_ pour faire des query SQL,
+    fait des _futures_ custom,
+    utilisé _Docker_ et _Terraform_ pour le déployer,
+    finalisé une authtification _OAuth2_,
+    beaucoup apris sur le système de macros,
+    et de manière générale, j'ai touché à beaucoup plus de technologies que nécessaire.
+  Pour un premier _gros_ projet en Rust,
+    il m'a permis de découvrir l'écosystème et de jouer avec des technologies variés.
 ]
 
 #pagebreak()
@@ -100,16 +99,15 @@ C'est pourquoi j'apprécie les aspects bas niveau, les compilateurs, les protoco
 
 - Activement impliqué dans la *communauté Open Source*,
     j'essaie de remplir des tickets et de proposer des changements de code dès que possible.
-    Je choisis des outils auquels je peux contribuer.
+    Je choisis des outils auxquels je peux contribuer.
 
-// Ayant participé à la plupart des rencontres Paris Rust Meetups organisées par l'un des chefs d'équipe Rust depuis 2022,
-//   j'ai eu de nombreuses occasions d'apprendre grâce à des conférences et de discuter de sujets techniques.
+- Ayant participé à la plupart des rencontres Paris Rust Meetups organisées par l'un des chefs d'équipe Rust depuis 2022,
+    j'ai eu de nombreuses occasions d'apprendre grâce à des conférences et de discuter de sujets techniques.
 
 - En 2025, j'ai participé à plusieurs *hackathons* organisés par le gouvernement français.
 
 // Le premier portait sur la validation des PDF à des fins d'accessibilité, et le concept de mon équipe a été sélectionné pour être développé en un projet pleinement fonctionnel.
 // Le second était un hackathon international consacré à La Suite Numérique (suite bureautique open source européenne).
-
 
 = Formation
 
