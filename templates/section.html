@@ -19,6 +19,8 @@
             {{ post_macros::header(page=page) }}
             {{ post_macros::content(page=page, summary=true) }}
         </div>
+    {% else -%}
+        <p style="opacity: .5;">{{ i18n_macros::tr(key="empty_list") }}</p>
     {% endfor -%}
     <div class="pagination">
         <div class="pagination__buttons">

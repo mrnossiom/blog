@@ -40,14 +40,14 @@ logo_text = "Milo Moisson"
 edit_page_base = "https://github.com/mrnossiom/blog/edit/public/content/"
 
 menu_items = [
-  { key = "home", url = "/" },
+  # { key = "home", url = "/" },
   { key = "about", url = "/about" },
   { key = "posts", url = "/posts" },
   { key = "projects", url = "/projects" },
-  { key = "tags", url = "/tags" },
-  { key = "archive", url = "/archive" },
+  # { key = "tags", url = "/tags" },
+  # { key = "archive", url = "/archive" },
 
-  { name = "github", url = "https://github.com/mrnossiom", newtab = true },
+  { name = "forge (github)", url = "https://github.com/mrnossiom", newtab = true },
 ]
 
 [translations]
@@ -60,6 +60,7 @@ theme-reset = "Reset to detected theme"
 
 edit_page_github = "Edit/Correct this page on GitHub"
 read_more = "Read more"
+empty_list = "Yeah, it's empty."
 
 state_label-draft = "draft"
 state_label-hold = "on hold"
@@ -85,6 +86,7 @@ theme-reset = "Revenir au theme automatique"
 
 edit_page_github = "Éditer/Corriger cette page sur GitHub"
 read_more = "Lire plus"
+empty_list = "En effet, c'est vide."
 
 state_label-draft = "brouillon"
 state_label-hold = "suspendu"

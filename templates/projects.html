@@ -53,6 +53,8 @@
                 </div>
             </div>
         </div>
+    {% else -%}
+        <p style="opacity: .5;">{{ i18n_macros::tr(key="empty_list") }}</p>
     {% endfor -%}
 
     <div class="pagination">
