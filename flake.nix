@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.05";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.05";
   };
 
   outputs = { self, nixpkgs }:
@@ -24,9 +24,9 @@
           default = pkgs.mkShell rec {
             nativeBuildInputs = with pkgs; [
               zola
-              act
             ];
-            buildInputs = with pkgs; [ ];
+
+            buildInputs = [ ];
 
             LD_LIBRARY_PATH = makeLibraryPath buildInputs;
           };

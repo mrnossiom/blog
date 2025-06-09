@@ -3,8 +3,10 @@ author = "Milo Moisson"
 description = "Milo's own place to post tech stuff and opinions"
 base_url = "https://wiro.world"
 
-generate_feed = true
-feed_filename = "atom.xml"
+generate_feeds = true
+feed_filenames = ["atom.xml"]
+
+build_search_index = true
 
 compile_sass = true
 
@@ -17,14 +19,12 @@ taxonomies = [
 
 [languages.fr]
 title = "Wiro World"
-author = "Milo Moisson"
 description = "La place publique de Milo sur des sujets techniques ou des opinions"
 
-generate_feed = true
-feed_filename = "atom.xml"
+generate_feeds = true
+feed_filenames = ["atom.xml"]
 
 build_search_index = true
-compile_sass = true
 
 taxonomies = [
   { name = "tags", feed = false },

@@ -14,7 +14,7 @@
     {{- head_macros::head(config=config) -}}
 
     {%- block rss %}
-    <link title="{{ config.title }} global feed ({{ lang }})" rel="alternate" type="application/atom+xml" href="{{ get_url(path=config.feed_filename, lang=lang) }}">
+    <link title="{{ config.title }} global feed ({{ lang }})" rel="alternate" type="application/atom+xml" href="{{ get_url(path="atom.xml", lang=lang) }}">
     {% endblock -%}
 
     {%- block extra_head %}
@@ -51,7 +51,7 @@
                     <i class="icon icon-globe"></i>
                 </a>
 
-                <div class="theme-switcher">
+                <div class="theme-switcher js">
                     <script defer src="{{ get_url(path="js/theme-switcher.js") }}"></script>
 
                     <i

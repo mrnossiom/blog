@@ -1,15 +1,13 @@
-{# TODO: add more info based on metadata, check the atom spec #}
-
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{{ lang }}">
-    <title>
-      {{- config.title }}
-      {%- if term %} - {{ term.name }}
-      {%- elif section.title %} - {{ section.title }}
-      {%- endif -%}
+    <title>{{ config.title }}
+    {%- if term %} - {{ term.name }}
+    {%- elif section.title %} - {{ section.title }}
+    {%- endif -%}
     </title>
+    {%- if config.description %}
     <subtitle>{{ config.description }}</subtitle>
-
+    {%- endif %}
     <link rel="self" type="application/atom+xml" href="{{ feed_url | safe }}"/>
     <link rel="alternate" type="text/html" href="
       {%- if section -%}
@@ -18,39 +16,37 @@
         {{ config.base_url | escape_xml | safe }}
       {%- endif -%}
     "/>
-
     <updated>{{ last_updated | date(format="%+") }}</updated>
     <id>{{ feed_url | safe }}</id>
-
     {%- for page in pages %}
     <entry xml:lang="{{ page.lang }}">
         <title>{{ page.title }}</title>
-
         <published>{{ page.date | date(format="%+") }}</published>
         <updated>{{ page.updated | default(value=page.date) | date(format="%+") }}</updated>
-
         {% for author in page.authors %}
-          <author>
-            <name>{{ author }}</name>
-          </author>
+        <author>
+          <name>
+            {{ author }}
+          </name>
+        </author>
         {% else %}
-          <author>
-            <name>{{ config.author }}</name>
-          </author>
+        <author>
+          <name>
+            {%- if config.author -%}
+              {{ config.author }}
+            {%- else -%}
+              Unknown
+            {%- endif -%}
+          </name>
+        </author>
         {% endfor %}
-
         <link rel="alternate" type="text/html" href="{{ page.permalink | safe }}"/>
-
         <id>{{ page.permalink | safe }}</id>
-        {%- if page.extra.summary -%}
-          <summary type="html">{{ page.extra.summary | markdown }}</summary>
-        {%- elif page.summary -%}
-          <summary type="html">{{ page.summary }}</summary>
-        {%- else -%}
-          {{ throw(message="A summary is required for: " ~ page.title ~ " with lang: " ~ page.lang) }}
-        {%- endif -%}
+        {% if page.summary %}
+        <summary type="html">{{ page.summary }}</summary>
+        {% else %}
+        <content type="html" xml:base="{{ page.permalink | escape_xml | safe }}">{{ page.content }}</content>
+        {% endif %}
     </entry>
     {%- endfor %}
 </feed>
-
-
