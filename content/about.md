@@ -16,6 +16,8 @@ In a sphere where sharing is key, [Open Source](https://opensource.org/osd) is i
 
 I write both technical articles and development stories. You can use the [RSS](/atom.xml) {{icon(icon="rss")}} feed to get updates. You can also find me on the {{elink(content="Fediverse", url="https://piaille.fr/@wiro", icon="fediverse")}} or {{elink(content="BlueSky", url="https://bsky.com/profile/wiro", icon="bluesky")}}. Feel free to reach by mail {{icon(icon="email")}} at `milo[at]wiro[.]world` or on _Discord_ {{icon(icon="discord")}} at [@mrnossiom](https://discord.com/users/414017710091927552).
 
+Or you can get a more [traditional PDF resume](/cv-en.pdf).
+
 # Stack
 
 As of 2024, the majority of the code I write for myself is Rust.
