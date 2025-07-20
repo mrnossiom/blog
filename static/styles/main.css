@@ -80,3 +80,13 @@
     }
   }
 }
+
+.email {
+  &::before {
+    content: "milo";
+  }
+
+  &::after {
+    content: "wiro.world";
+  }
+}
