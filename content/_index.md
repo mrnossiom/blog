@@ -34,3 +34,4 @@ View my CV: [HTML](@/cv/index.md) / [PDF](/cv/cv-milo-moisson.pdf).
 You can also read [more in-depth project writeups](@/projects/_index.md) 🗒️.
 
 <!-- TODO: place metrics -->
+The metric system is a system of measurement that standardizes a set of base units and a nomenclature for describing relatively large and small quantities via decimal-based multiplicative unit prefixes. Though the rules governing the metric system have changed over time, the modern definition, the International System of Units (SI), defines the metric prefixes and seven base units: metre (m), kilogram (kg), second (s), ampere (A), kelvin (K), mole (mol), and candela (cd).
