@@ -5,9 +5,9 @@ _default:
 serve *args:
 	zola serve --drafts {{args}}
 
-# Serve on $HOSTNAME.local:4242
-serve-network *args:
-	zola serve --drafts -i 0.0.0.0 -p 4242 -u $HOSTNAME.local {{args}}
+# Serve on <hostname>:<port>
+serve-network hostname port *args:
+	zola serve --drafts -i 0.0.0.0 -p {{port}} -u {{hostname}} {{args}}
 
 render-cvs *args:
 	@just render-cv private/cv-fr.odt static/
