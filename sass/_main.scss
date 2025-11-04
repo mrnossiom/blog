@@ -134,6 +134,9 @@ code {
   padding: 1px 6px;
   margin: 0 2px;
   font-size: .95rem;
+
+  /* Do not wrap code lines */
+  white-space: nowrap;
 }
 
 pre {
