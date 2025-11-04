@@ -18,6 +18,16 @@
     {
       formatter = forAllPkgs (pkgs: pkgs.nixpkgs-fmt);
 
+      packages = forAllPkgs (pkgs: {
+        site = pkgs.stdenv.mkDerivation {
+          name = "wiro.world";
+          src = ./.;
+          nativeBuildInputs = [ pkgs.zola ];
+          buildPhase = "zola build";
+          installPhase = "cp -r public $out";
+        };
+      });
+
       devShells = forAllPkgs (pkgs:
         with pkgs.lib;
         {
