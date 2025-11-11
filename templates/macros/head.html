@@ -13,4 +13,10 @@
     {# Mastodon Website verification and content attribution -#}
     <link rel="me" href="https://piaille.fr/@wiro">
     <meta name="fediverse:creator" content="@wiro@piaille.fr">
+
+    {# Ping back home for stats using https://codeberg.org/kytta/diet-goat -#}
+    <script type="module">
+        import { count } from "{{ get_url(path="/js/dietgoat.js", trailing_slash=false) | safe }}";
+        count("https://stats.wiro.world/count");
+    </script>
 {% endmacro head %}
