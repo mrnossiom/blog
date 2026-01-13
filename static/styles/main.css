@@ -85,11 +85,11 @@
 
 .email {
   &::before {
-    content: "milo";
+    content: "milo[a";
   }
 
   &::after {
-    content: "wiro.world";
+    content: "t]wiro.world";
   }
 }
 
