@@ -28,11 +28,7 @@
         <div class="header__inner">
             <div class="header__logo">
                 <a href="{{ i18n_macros::prefix_path(path="/") | safe }}" style="text-decoration: none;">
-                    <div class="logo">
-                        {%- block logo_content -%}
-                            {{- menu_macros::logo_text(config=config) -}}
-                        {%- endblock logo_content -%}
-                    </div>
+                    <img class="logo" alt="wiro logo" src="{{ get_url(path="/badge-small.png", trailing_slash=false) | safe }}" style="image-rendering: pixelated" />
                 </a>
             </div>
 
