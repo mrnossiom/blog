@@ -30,9 +30,9 @@ taxonomies = [
   { name = "tags", feed = false },
 ]
 
-[markdown]
-highlight_code = true
-highlight_theme = "boron"
+[markdown.highlighting]
+theme = "one-dark-pro"
+error_on_missing_language = true
 
 [extra]
 logo_text = "Milo Moisson"

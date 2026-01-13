@@ -16,7 +16,7 @@
         {{ config.base_url | escape_xml | safe }}
       {%- endif -%}
     "/>
-    <updated>{{ last_updated | date(format="%+") }}</updated>
+    {% if last_updated is defined %}<updated>{{ last_updated | date(format="%+") }}</updated>{% endif %}
     <id>{{ feed_url | safe }}</id>
     {%- for page in pages %}
     <entry xml:lang="{{ page.lang }}">

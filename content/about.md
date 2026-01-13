@@ -8,9 +8,9 @@ title = "About me"
 # TL;DR
 <!-- keep this part synced with homepage -->
 
-I'm Milo, an 19 y.o. French student based next to Paris. I enjoy diving into complex parts of our everyday stack. That's why I like low level stuff, compiler, protocols and Rust 🦀.
+I'm Milo, a 19 y.o. French student based next to Paris. I enjoy diving into complex parts of our everyday stack. That's why I like low level stuff, compiler, protocols and Rust 🦀.
 
-<!-- > You can read about [my whole developper experience](@/programmer-bio/index.md) or about [my personal experience](@/life-bio.md). -->
+<!-- > You can read about [my whole developer experience](@/programmer-bio/index.md) or about [my personal experience](@/life-bio.md). -->
 
 In a sphere where sharing is key, [Open Source](https://opensource.org/osd) is important to me. Most of the tooling I use is *libre*, so I have the choice to take part to surrounding discussions or to inspect source code and suggest changes.
 
@@ -22,7 +22,7 @@ Or you can get a more [traditional PDF resume](/cv-en.pdf).
 
 As of 2024, the majority of the code I write for myself is Rust.
 
-I know how to interact with relational databases (Postgres). I've already managed small RPI servers to host backends or services such as [OctoPrint]. Before I tasted `Nix`, I would use [Docker] a lot, even for local developement. I touched to [Terraform] to deploy to the cloud.
+I know how to interact with relational databases (Postgres). I've already managed small RPI servers to host backends or services such as [OctoPrint]. Before I tasted `Nix`, I would use [Docker] a lot, even for local development. I touched to [Terraform] to deploy to the cloud.
 
 During my web period, I've read a fair amount of posts, online documentation, opinions and debates. I've had some experience with many JavaScript frameworks: [React], [Next] and [Vue]. I've been a big fan of typed languages, that's why I adopted [TypeScript].
 
