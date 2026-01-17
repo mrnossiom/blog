@@ -128,6 +128,9 @@ figure {
 }
 
 code {
+  display: inline-block;
+  width: max-content;
+
   font-family: var(--mm-font-code);
   font-feature-settings: normal;
   background: var(--mm-accent-alpha-20);
