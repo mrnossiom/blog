@@ -1,22 +1,30 @@
 {
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs?ref=nixos-unstable";
   };
 
-  outputs = { self, nixpkgs }:
+  outputs =
+    { self, nixpkgs }:
     let
       inherit (nixpkgs.lib) genAttrs;
 
-      forAllSystems = genAttrs [ "x86_64-linux" "aarch64-linux" "aarch64-darwin" ];
+      forAllSystems = genAttrs [
+        "x86_64-linux"
+        "aarch64-linux"
+        "aarch64-darwin"
+      ];
       forAllPkgs = function: forAllSystems (system: function pkgs.${system});
 
-      pkgs = forAllSystems (system: (import nixpkgs {
-        inherit system;
-        overlays = [ ];
-      }));
+      pkgs = forAllSystems (
+        system:
+        import nixpkgs {
+          inherit system;
+          overlays = [ ];
+        }
+      );
     in
     {
-      formatter = forAllPkgs (pkgs: pkgs.nixpkgs-fmt);
+      formatter = forAllPkgs (pkgs: pkgs.nixfmt-tree);
 
       packages = forAllPkgs (pkgs: {
         site = pkgs.stdenv.mkDerivation {
@@ -28,21 +36,14 @@
         };
       });
 
-      devShells = forAllPkgs (pkgs:
-        with pkgs.lib;
-        {
-          default = pkgs.mkShell rec {
-            nativeBuildInputs = with pkgs; [
-              zola
+      devShells = forAllPkgs (pkgs: {
+        default = pkgs.mkShell {
+          packages = with pkgs; [
+            zola
 
-              just
-            ];
-
-            buildInputs = [ ];
-
-            LD_LIBRARY_PATH = makeLibraryPath buildInputs;
-          };
-        });
+            just
+          ];
+        };
+      });
     };
 }
-
