@@ -31,7 +31,7 @@
 
     &:after {
       content: '';
-      background: repeating-linear-gradient(90deg, var(--mm-accent), var(--mm-accent) 2px, transparent 0, transparent 16px);
+      background: repeating-linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 14px, var(--mm-accent) 0, var(--mm-accent) 16px);
       display: block;
       width: 100%;
       right: 10px;
