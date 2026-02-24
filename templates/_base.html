@@ -78,7 +78,7 @@
     {% block footer %}
     <footer class="footer">
         <div class="footer__inner">
-            <div class="copyright">© {{ date_macros::now_year() | trim }} {{ config.author }}</div>
+            <div class="copyright">© 2024-{{ date_macros::now_year() | trim }} {{ config.author }}</div>
 
             {% if page -%}
                 {% set filepath = page.relative_path -%}

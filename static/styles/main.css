@@ -1,6 +1,7 @@
 @import url("/compiled.css");
 
 @import url("_buttons.css");
+@import url("_icons.css");
 
 :root {
   --mm-font-article: serif;

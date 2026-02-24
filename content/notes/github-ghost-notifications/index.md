@@ -2,20 +2,13 @@
 title = "How to clear GitHub ghost notifications?"
 date = "2025-11-04"
 updated = "2025-11-04"
-
-[extra]
-skills = []
-
-summary = """
-Once in a while, I get metionned by a spam account. Those spam issues get removed quickly but they also glitch out the notification feed leaving a blue badge on top of your notification tray forever.
-
-Really forever? No, because you can suppress the notification thread (how GitHub refers to such items in their documentation) via the API.
-"""
 +++
 
-Once in a while, I get metionned on GitHub by a spam account. Those spam messages often get removed quickly but they also glitch out the notification tray, leaving a blue badge on top of your notification tray forever.
+Once in a while, I get metionned on GitHub by a spam account.
+Those spam messages often get removed quickly but they also glitch out the notification tray, leaving a blue badge on top of your notification tray forever.
 
-Really forever? No, because you can suppress the notification thread (how GitHub refers to such items in their documentation) via the API.
+Really forever?
+No, because you can suppress the notification thread (how GitHub refers to such items in their documentation) via the API.
 
 <!-- more -->
 

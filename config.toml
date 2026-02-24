@@ -42,8 +42,8 @@ edit_page_base = "https://github.com/mrnossiom/blog/edit/public/content/"
 menu_items = [
   # { key = "home", url = "/" },
   { key = "about", url = "/about" },
-  { key = "posts", url = "/posts" },
-  { key = "projects", url = "/projects" },
+  # { key = "posts", url = "/posts" },
+  # { key = "projects", url = "/projects" },
   # { key = "tags", url = "/tags" },
   # { key = "archive", url = "/archive" },
 
