@@ -19,7 +19,7 @@ Vous pouvez utiliser le flux [RSS](/atom.xml) {{icon(icon="rss")}} pour être mi
 Vous pouvez aussi me trouver sur le {{elink(content="Fediverse", url="https://piaille.fr/@wiro", icon="fediverse")}} ou {{elink(content="BlueSky", url="https://bsky.com/profile/wiro", icon="bluesky")}}.
 N'hésitez pas à me contacter par email {{icon(icon="email")}} à <span class="email"></span> ou sur _Matrix_ {{icon(icon="matrix")}} à [@milo@wiro.world](https://matrix.to/#/@milo:wiro.world).
 
-Sinon vous pouvez lire [mon CV en PDF](/cv-fr.pdf).
+Mon CV est disponible en [PDF](/cv-milo_moisson.pdf).
 
 # Pile de technologies
 

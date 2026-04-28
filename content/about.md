@@ -22,11 +22,11 @@ You can use the [RSS](/atom.xml) {{icon(icon="rss")}} feed to get updates.
 You can also find me on the {{elink(content="Fediverse", url="https://piaille.fr/@wiro", icon="fediverse")}} or {{elink(content="BlueSky", url="https://bsky.com/profile/wiro", icon="bluesky")}}.
 Feel free to reach by mail {{icon(icon="email")}} at <span class="email"></span> or on _Matrix_ {{icon(icon="matrix")}} at [@milo@wiro.world](https://matrix.to/#/@milo:wiro.world).
 
-Or you can get a more [traditional PDF resume](/cv-en.pdf).
+You can get a traditional form resume in [PDF](/resume-milo_moisson.pdf).
 
 # Stack
 
-As of 2024, the majority of the code I write for myself is Rust.
+As of 2026, the majority of the code I write for myself is Rust.
 
 I know how to interact with relational databases (Postgres).
 I've already managed small [Raspberry PI] servers to host backends or services such as [OctoPrint].

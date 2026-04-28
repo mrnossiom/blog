@@ -9,9 +9,6 @@ serve *args:
 serve-network hostname port *args:
 	zola serve --drafts -i 0.0.0.0 -p {{port}} -u {{hostname}} {{args}}
 
-render-cvs *args:
-	@just render-cv private/cv-fr.odt static/
-	@just render-cv private/cv-en.odt static/
-
-render-cv input output-dir *args:
-	soffice --convert-to 'pdf' --outdir {{output-dir}} {{input}} {{args}}
+render-documents *args:
+	@typst compile private/resume-en.typ public/resume-milo_moisson.pdf
+	@typst compile private/resume-fr.typ public/cv-milo_moisson.pdf
