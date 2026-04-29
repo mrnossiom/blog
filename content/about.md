@@ -1,12 +1,8 @@
 +++
 title = "About me"
-
-# Inspiration from Jimmy Hartzell
-# https://www.thecodedmessage.com/about/
 +++
 
-# TL;DR
-<!-- keep this part synced with homepage -->
+# Narrative
 
 I'm Milo, a 20 y.o. French student based next to Paris.
 I enjoy diving into complex parts of our everyday stack.
@@ -25,6 +21,7 @@ Feel free to reach by mail {{icon(icon="email")}} at <span class="email"></span>
 You can get a traditional form resume in [PDF](/resume-milo_moisson.pdf).
 
 # Stack
+<!-- remove the whole part? -->
 
 As of 2026, the majority of the code I write for myself is Rust.
 
