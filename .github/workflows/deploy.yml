@@ -1,37 +1,38 @@
-name: Build and deploy GitHub Pages
+name: Build and deploy website
 
 on:
   push:
-    branches: [ public ]
+    branches:
+      - public
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 concurrency:
-  group: "pages"
+  group: "website"
   cancel-in-progress: false
+
+permissions: {}
 
 jobs:
   build:
     runs-on: ubuntu-latest
     environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      name: website
+      url: https://wiro.world
     steps:
-      - uses: actions/checkout@v5
-      - uses: actions/configure-pages@v5
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
       - uses: cachix/install-nix-action@v31
         with:
           github_access_token: ${{ secrets.GITHUB_TOKEN }}
-     
-      - run: nix build .#site
-      
-      - uses: actions/upload-pages-artifact@v4
-        with:
-          path: 'result'
 
-      - uses: actions/deploy-pages@v4
-        id: deployment
+      - run: nix build .#website
+
+      - run: |
+          nix run .#git-pages-cli -- \
+            https://wiro.world \
+            --password "${GIT_PAGES_CHALLENGE}" \
+            --server grebedoc.dev \
+            --upload-dir result
+        env:
+          GIT_PAGES_CHALLENGE: ${{ secrets.GIT_PAGES_CHALLENGE }}
