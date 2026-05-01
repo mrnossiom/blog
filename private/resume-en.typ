@@ -6,7 +6,7 @@
 
 #header
 
-I’m a 20 y.o French developer, currently studying at EPITA Paris.
+I’m a 20 y.o. French developer, currently studying at EPITA Paris.
 I enjoy diving into complex parts of our everyday stack.
 That’s why I like low level stuff, compilers, protocols, and systems programming in general.
 
@@ -40,12 +40,6 @@ That’s why I like low level stuff, compilers, protocols, and systems programmi
 )[
   - Developed a Google Sheets extension to interact with LLMs in batches.
 ]
-
-#experience(
-  title: [Observation Internship],
-  company: [JoliCode],
-  date: [February 2021],
-)[]
 
 = Projects
 
