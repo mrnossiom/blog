@@ -43,6 +43,7 @@
       lpkgs = forAllSystems (system: {
         website-static = pkgs.${system}.callPackage (import "${dotfiles}/pkgs/website-static.nix") { };
         inherit (self.packages.${system})
+          redirects
           resume-en
           resume-fr
           website-raw
@@ -72,6 +73,11 @@
           resume-en = renderTypstPdf "resume-milo_moisson" "private/resume-en.typ";
           resume-fr = renderTypstPdf "cv-milo_moisson" "private/resume-fr.typ";
 
+          redirects = pkgs.writeText "_redirects" ''
+            / /about 301!
+            /fr/ /fr/about 301!
+          '';
+
           website-raw = pkgs.stdenv.mkDerivation {
             name = "wiro.world-website-raw";
             src = ./.;
@@ -86,6 +92,7 @@
             cp -rTL ${lpkgs.website-static} $out/
             cp -rT ${lpkgs.resume-en} $out/resume-milo_moisson.pdf
             cp -rT ${lpkgs.resume-fr} $out/cv-milo_moisson.pdf
+            cp -rT ${lpkgs.redirects} $out/_redirects
           '';
 
           inherit (pkgs)
