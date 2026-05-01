@@ -58,7 +58,12 @@
         let
           renderTypstPdf =
             let
-              fontsConf = pkgs.makeFontsConf { fontDirectories = [ pkgs.merriweather ]; };
+              fontsConf = pkgs.makeFontsConf {
+                fontDirectories = [
+                  pkgs.merriweather
+                  pkgs.noto-fonts-color-emoji
+                ];
+              };
             in
             name: entrypoint:
             pkgs.stdenv.mkDerivation {
