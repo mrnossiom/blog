@@ -48,6 +48,7 @@
 
 #let dimmed(body) = { text(fill: luma(40%), body) }
 #let soft-newline = [ \ ]
+#let https-link(url) = link("https://" + url, url)
 
 // -- Resume blocks
 
@@ -68,10 +69,10 @@
 
   #(
     link("mailto:milo@wiro.world"),
-    link("https://wiro.world", "wiro.world"),
-    link("https://github.com/mrnossiom", "github.com/mrnossiom"),
-    // link("https://tangled.org/wiro.world", "tangled.org/wiro.world"),
-    link("https://linkedin.com/in/milomoisson", "linkedin.com/in/milomoisson"),
+    https-link("wiro.world"),
+    https-link("github.com/mrnossiom"),
+    // https-link("tangled.org/wiro.world"),
+    https-link("linkedin.com/in/milomoisson"),
   ).join[ | ]
 ]
 
@@ -83,6 +84,7 @@
   body,
 ) = {
   let title-at-company = strong(delta: 200)[#title @ #company]
+  // let title-at-company = strong(delta: 200)[#title, @#company]
 
   if techs == "" {
     generic-one-by-two(
@@ -103,12 +105,12 @@
 
 #let formation(
   place: "",
-  date: ("", ""),
+  date: "",
   body
 ) = {
   generic-one-by-two(
     left: strong(delta: 200, place),
-    right: date.join[ --- ],
+    right: date,
   )
   soft-newline
   dimmed(body)
@@ -116,15 +118,13 @@
 
 #let project(
   name: "",
-  url: "",
-  date: ("", ""),
+  link: "",
+  date: "",
   body
 ) = {
-  generic-two-by-two(
-    top-left: strong(delta: 200, name),
-    top-right: date.join[ --- ],
-    bottom-left: link(url),
-    // bottom-right: ?
+  generic-one-by-two(
+    left: [ #strong(delta: 200, name) #dimmed(link) ],
+    right: date,
   )
   soft-newline
   body

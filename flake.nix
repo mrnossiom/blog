@@ -109,6 +109,7 @@
               just
               tinymist
               typst
+              watchexec
               zola
             ];
           };
