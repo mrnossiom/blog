@@ -31,7 +31,8 @@ taxonomies = [
 ]
 
 [markdown.highlighting]
-theme = "one-dark-pro"
+dark_theme = "one-dark-pro"
+light_theme = "github-light"
 error_on_missing_language = true
 
 [extra]
