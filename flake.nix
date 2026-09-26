@@ -1,12 +1,10 @@
 {
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs?ref=nixos-unstable";
+    # nixpkgs.url = "https://channels.nixos.org/nixos-unstable/nixexprs.tar.xz";
 
-    dotfiles = {
-      # TODO: wait for alternate server branch to be merged
-      url = "github:mrnossiom/dotfiles?ref=push-uttstrxmxrun";
-      flake = false;
-    };
+    dotfiles.url = "github:mrnossiom/dotfiles";
+    dotfiles.flake = false;
   };
 
   outputs =
