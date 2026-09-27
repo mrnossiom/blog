@@ -101,7 +101,7 @@ C'est pourquoi j'apprécie les aspects bas niveau, les compilateurs, les protoco
     j'essaie de remplir des tickets et de proposer des changements de code dès que possible.
     Je choisis des outils auxquels je peux contribuer.
 
-- Ayant participé à la plupart des rencontres Paris Rust Meetups organisées par l'un des chefs d'équipe Rust depuis 2022,
+- Ayant participé à la plupart des *rencontres Rust Paris* organisées par l'un des chefs d'équipe Rust depuis 2022,
     j'ai eu de nombreuses occasions d'apprendre grâce à des conférences et de discuter de sujets techniques.
 
 - En 2025, j'ai participé à plusieurs *hackathons* organisés par le gouvernement français.
@@ -115,7 +115,8 @@ C'est pourquoi j'apprécie les aspects bas niveau, les compilateurs, les protoco
   place: [EPITA],
   date: [2024 --- Aujourd'hui]
 )[
-  2ème année d'informatique
+  1ère année du Cycle Ingénieur (3ème année)
+  Assistant du Cycle Préparatoire (ACDC)
 ]
 
 #formation(

@@ -96,7 +96,7 @@ That’s why I like low level stuff, compilers, protocols, and systems programmi
     I try to fill issues and merge requests whenever possible.
   I choose tools that I can contribute to.
 
-- I joined most of the Paris *Rust Meetups* organised by one of the Rust team leads *since 2022*,
+- I joined most of the *Rust Paris meetups* organised by one of the Rust team leads *since 2022*,
     there have been many opportunities for me to learn from talks and to discuss technical topics.
 
 - In 2025, I’ve participated in several *hackathons* organised by the French government around *accessibility* and *open source software*.
@@ -107,7 +107,8 @@ That’s why I like low level stuff, compilers, protocols, and systems programmi
   place: [EPITA],
   date: [2024 --- Present]
 )[
-  2nd year of Computer Science
+  3rd year of Computer Science \
+  Assistant to the Preparation Cycle (ACDC)
 ]
 
 #formation(
