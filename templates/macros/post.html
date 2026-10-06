@@ -21,7 +21,7 @@
 {% macro date(page) %}
     <span class="post-date">
         {%- if page.date %}
-            {{ page.date | date(format="%d-%m-%Y") }}
+            {{ page.date | date(format="%d %B %Y") }}
         {% endif -%}
     </span>
 {% endmacro post_date %}
@@ -62,7 +62,7 @@
         {% if page.draft -%}
         <span class="badge" data-status="draft">{{ i18n_macros::tr(key="state_label-draft") }}</span>
         {% endif -%}
-        
+
         {{- page.title -}}
     </a></h1>
     <div class="post-meta-inline">

@@ -140,7 +140,7 @@ I see no trivial way of patching this. As we've seen *ASLR* is not going to help
 
 The exploit is not that complicated but it was fun to understand the whole process by ourselves. It's in these kind of moment that all the rabbit holes you followed finally click together and help you move forward. Also the simplicity of the exploit resides in the fact that we already have quite liberal remote code execution (as a feature). Still, it involves *ASLR* bypass and requires a fair amount of understanding of what is going on.
 
-# Notes
+---
 
 [^gconf-plagiarism]: You can [watch a talk][gconf-plagiarism-talk] about it (in French) from the research lab of the school.
 
