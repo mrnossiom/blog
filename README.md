@@ -1,30 +1,25 @@
 # Blog
 
-Powered by [Zola](https://www.getzola.org) based on [terminimal](https://github.com/pawroman/zola-theme-terminimal) theme.
+Powered by [Zola][zola] based on [terminimal][terminimal-theme] theme.
+
+[zola]: https://www.getzola.org
+[terminimal-theme]: https://github.com/pawroman/zola-theme-terminimal
 
 # Features
 
-- Dual localisation
-- Light/Dark Mode
+- [ ] ~~Dual localisation~~
+- [x] Static Light/Dark Mode
+- [ ] Comments system (see https://utteranc.es).
 
-# Wanted features
-
-- Comments system. See https://utteranc.es
-- Organized tech notes. See https://bsago.me/tech-notes
-- Badges like https://notbyai.fyi
-- Monthly blogroll 
-
-# Issues
-
-- `_index.md`: change how featured are showed
-- `about.md`: finish and translate
-- `links.md`: have a link to this and add more content
-- `posts/_index.md`: have at least one article, either add nixos or decl lang
-- `projects/_index.md`: finish at least 3 project description (lspelling&ruspell, embedded-car, sound of sorsting)
+- [ ] Organized tech notes (see https://bsago.me/tech-notes).
+- [ ] Monthly blogroll
 
 # License
 
-<!-- TODO: transition content to creative common licence? -->
-Written content (e.g. articles, bio, etc.) is copyrighted. Website design and logic is under the [CECILL 2.1 licence](https://cecill.info/licences.fr.html).
+Written content (e.g. articles, bio, etc.) is [*CC BY-NC 4.0*][license-ccbync].
+Website design and logic is under the [EUPL v1.2][license-eupl].
 
-© 2024-2025 Milo Moisson
+[license-ccbync]: https://creativecommons.org/licenses/by-nc/4.0/
+[license-eupl]: https://eupl.eu/1.2/en
+
+© 2024-2027 Milo Moisson
