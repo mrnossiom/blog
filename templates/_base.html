@@ -31,22 +31,6 @@
                     <img class="logo" alt="wiro logo" src="{{ get_url(path="/badge-small.png", trailing_slash=false) | safe }}" style="image-rendering: pixelated" />
                 </a>
             </div>
-
-            <div class="header__utils">
-                {% set current_path = current_path | default(value="/") -%}
-                {%- if lang == config.default_language -%}
-                    {% set next_lang_link = "/fr" ~ current_path %}
-                {%- else -%}
-                    {% set next_lang_link = current_path | replace(from="/" ~ lang ~ "/", to="/") %}
-                {%- endif -%}
-                <a
-                    href="{{ next_lang_link | safe }}"
-                    title="{{ i18n_macros::tr(key='lang-switch') }}"
-                    role="button"
-                >
-                    <i class="icon icon-globe"></i>
-                </a>
-            </div>
         </div>
 
         {% block header_menu %}

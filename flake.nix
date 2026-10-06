@@ -77,8 +77,12 @@
           resume-fr = renderTypstPdf "cv-milo_moisson" "private/resume-fr.typ";
 
           redirects = pkgs.writeText "_redirects" ''
-            / /about 301!
+            # skip home page, redirect to about page
             /fr/ /fr/about 301!
+            / /about 301!
+
+            # hide french version until revamp
+            /fr/* / 307!
           '';
 
           website-raw = pkgs.stdenv.mkDerivation {

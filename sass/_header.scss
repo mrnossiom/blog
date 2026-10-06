@@ -43,21 +43,6 @@
     }
   }
 
-  &__utils {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    gap: 1rem;
-    margin: 0 .5rem;
-
-    text-decoration: none;
-
-    * {
-      display: grid;
-      place-content: center;
-    }
-  }
-
   .menu {
     &__inner {
       display: flex;
