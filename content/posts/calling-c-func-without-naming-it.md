@@ -29,9 +29,9 @@ In modern laptop software, memory addresses are often execution-dependent. This 
 [wiki-aslr]: https://en.wikipedia.org/wiki/Address_space_layout_randomization
 [wiki-pic-section-pie]: https://en.wikipedia.org/wiki/Position-independent_code#Position-independent_executables
 
-Static addresses won't work. But *ASLR* only acts on the mapping of the segments, their content is left intact. Inside a segment, functions are still ordered in the same way. If we manage to know the static offset between the memory addresses of two functions f~A~ and f~B~, obtaining the address of f~A~ allows us to construct the address of f~B~ and vice-versa.
+Static addresses won't work. But *ASLR* only acts on the mapping of the segments, their content is left intact. Inside a segment, functions are still ordered in the same way. If we manage to know the static offset between the memory addresses of two functions f<sub>A</sub> and f<sub>B</sub>, obtaining the address of f<sub>A</sub> allows us to construct the address of f<sub>B</sub> and vice-versa.
 
-The offset varies from a machine to another because of a different version of the C library, or maybe a different architecture, or maybe for some other reason. There are multiple ways to obtain the fixed offset between two functions on the target machine. One of them is to just leak the offset in an exercise where you can name symbols of both f~A~ and f~B~.
+The offset varies from a machine to another because of a different version of the C library, or maybe a different architecture, or maybe for some other reason. There are multiple ways to obtain the fixed offset between two functions on the target machine. One of them is to just leak the offset in an exercise where you can name symbols of both f<sub>A</sub> and f<sub>B</sub>.
 
 Our target function is still `execve` which is part of `libc`. We assume we always have access to `printf`. We just have to leak the offset between the two functions on the VM. Let's test this locally first:
 
