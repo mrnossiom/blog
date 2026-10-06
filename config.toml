@@ -56,8 +56,6 @@ all_tags = "all tags"
 show_all_tags = "Show all tags"
 
 lang-switch = "Change to french"
-theme-switch = "Change theme"
-theme-reset = "Reset to detected theme"
 
 edit_page_github = "Found a typo? Edit this page ✎"
 read_more = "Read more"
@@ -82,8 +80,6 @@ all_tags = "tous les tags"
 show_all_tags = "Afficher tous les tags"
 
 lang-switch = "Passer en anglais"
-theme-switch = "Changer de theme"
-theme-reset = "Revenir au theme automatique"
 
 edit_page_github = "Une erreur ? Éditer cette page ✎"
 read_more = "Lire plus"
