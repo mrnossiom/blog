@@ -13,7 +13,7 @@ La plupart de l'outillage que j'utilise est libre.
 J'ai la possibilité de prendre part aux discussions qui mènent le projet ou d'inspecter le code source et de proposer mes changements.
 
 <!-- J'écris à la fois des articles techniques et des histoires de développement. -->
-<!-- Vous pouvez utiliser le flux [RSS](/atom.xml) {{icon(icon="rss")}} pour être mis à jour. -->
+Vous pouvez utiliser le flux [RSS](/atom.xml) {{icon(icon="rss")}} pour être mis à jour.
 Vous pouvez aussi me trouver sur le {{elink(content="Fediverse", url="https://piaille.fr/@wiro", icon="fediverse")}} ou {{elink(content="BlueSky", url="https://bsky.com/profile/wiro", icon="bluesky")}}.
 N'hésitez pas à me contacter par email {{icon(icon="email")}} à <span class="email"></span> ou sur _Matrix_ {{icon(icon="matrix")}} à [@milo@wiro.world](https://matrix.to/#/@milo:wiro.world).
 

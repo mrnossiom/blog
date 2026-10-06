@@ -1,4 +1,4 @@
-title = "Wiro World"
+title = "Wiro's World"
 author = "Milo Moisson"
 description = "Milo's own place to post tech stuff and opinions"
 base_url = "https://wiro.world"
@@ -12,14 +12,14 @@ compile_sass = true
 
 taxonomies = [
   # Tags (e.g. Rust, NixOS)
-  { name = "tags", feed = true },
+  { name = "tags", feed = false },
   # TODO Categories (e.g. dev, perso, misc)
   # { name = "categories", feed = false },
 ]
 
 [languages.fr]
-title = "Wiro World"
-description = "La place publique de Milo sur des sujets techniques ou des opinions"
+title = "Wiro's World"
+description = "La place publique de Milo sur des sujets techniques et des opinions"
 
 generate_feeds = true
 feed_filenames = ["atom.xml"]

@@ -23,30 +23,21 @@
         <title>{{ page.title }}</title>
         <published>{{ page.date | date(format="%+") }}</published>
         <updated>{{ page.updated | default(value=page.date) | date(format="%+") }}</updated>
-        {% for author in page.authors %}
+        {%- for author in page.authors -%}
         <author>
-          <name>
-            {{ author }}
-          </name>
+          <name>{{ author }}</name>
         </author>
-        {% else %}
+        {%- else -%}
         <author>
-          <name>
-            {%- if config.author -%}
-              {{ config.author }}
-            {%- else -%}
-              Unknown
-            {%- endif -%}
-          </name>
+          <name>{% if config.author %}{{ config.author }}{% else %}Unknown{% endif %}</name>
         </author>
-        {% endfor %}
+        {%- endfor -%}
         <link rel="alternate" type="text/html" href="{{ page.permalink | safe }}"/>
         <id>{{ page.permalink | safe }}</id>
-        {% if page.summary %}
+        {%- if page.summary %}
         <summary type="html">{{ page.summary }}</summary>
-        {% else %}
+        {% endif -%}
         <content type="html" xml:base="{{ page.permalink | escape_xml | safe }}">{{ page.content }}</content>
-        {% endif %}
     </entry>
     {%- endfor %}
 </feed>
