@@ -18,6 +18,14 @@
 {% endmacro content %}
 
 
+{% macro post_head(page) %}
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:site_name" content="{{ config.title }}">
+    <meta property="og:locale" content="{{ lang }}">
+{% endmacro post_head %}
+
+
 {% macro date(page) %}
     <span class="post-date">
         {%- if page.date %}
